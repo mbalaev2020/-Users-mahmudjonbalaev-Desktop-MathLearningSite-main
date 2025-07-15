@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Math Learning{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1><a href="/">Math Learning Platform</a></h1>
+    <nav>
+      {% if user.is_authenticated %}
+        Hello, {{ user.username }} |
+        <a href="{% url 'practice:skillset_list' %}">Practice</a> |
+        <a href="{% url 'assessments:list' %}">Tests</a> |
+
+          {# django needs secure logout #}
+         <form method="post" action="{% url 'logout' %}" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit" style="background:none;border:none;color:blue;cursor:pointer;">
+            Logout
+          </button>
+        </form>
+
+      {% else %}
+        <a href="{% url 'login' %}">Log in</a>
+      {% endif %}
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer><hr>&copy; 2025 Math Learning</footer>
+</body>
+</html>

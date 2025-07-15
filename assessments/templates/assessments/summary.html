@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Results – {{ ut.test.title }}{% endblock %}
+{% block content %}
+<h2>{{ ut.test.title }} – Score {{ ut.score }}%</h2>
+<table>
+  <tr><th>#</th><th>Question</th><th>Your</th><th>Correct</th></tr>
+  {% for a in answers %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ a.question.text|truncatechars:60 }}</td>
+      <td>{{ a.selected }}</td>
+      <td>{{ a.question.correct_answer }}</td>
+    </tr>
+  {% endfor %}
+</table>
+<a href="{% url 'assessments:list' %}">← Back to Tests</a>
+{% endblock %}

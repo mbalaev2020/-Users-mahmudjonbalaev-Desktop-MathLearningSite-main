@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ ut.test.title }}{% endblock %}
+{% block content %}
+<h3>{{ ut.test.title }}</h3>
+<p><strong>{{ question.text }}</strong></p>
+
+<form method="post">
+  {% csrf_token %}
+  {% for lbl, txt in [('A',question.choice_a),('B',question.choice_b),
+                      ('C',question.choice_c),('D',question.choice_d)] %}
+    <label><input type="radio" name="choice" value="{{ lbl }}"> {{ lbl }}. {{ txt }}</label><br>
+  {% endfor %}
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}

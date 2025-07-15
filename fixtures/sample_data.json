@@ -1,0 +1,17 @@
+[
+  {
+    "model": "curriculum.grade",
+    "pk": 1,
+    "fields": { "level": 3 }
+  },
+  {
+    "model": "curriculum.domain",
+    "pk": 1,
+    "fields": { "grade": 1, "name": "Arithmetic", "slug": "arithmetic" }
+  },
+  {
+    "model": "curriculum.standard",
+    "pk": 1,
+    "fields": { "domain": 1, "code": "3.01.01", "description": "Understand place value" }
+  }
+]

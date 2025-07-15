@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <h2>Welcome, {{ user.username }}!</h2>
+  <p>Select your grade or test to begin.</p>
+
+  {# Show grades if available #}
+  {% if grades %}
+    <h3>Your Grades</h3>
+    <ul>
+      {% for grade in grades %}
+        <li>
+          <a href="{% url 'curriculum:domain_list' grade.level %}">
+            Grade {{ grade.level }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No grades available yet.</p>
+  {% endif %}
+
+  <hr>
+  {# Quick access to other features #}
+  <h3>Other Links</h3>
+  <ul>
+    <li><a href="{% url 'practice:skillset_list' %}">Practice Skills</a></li> {# renamed #}
+    <li><a href="{% url 'assessments:list' %}">Take a Test</a></li>           {# renamed #}
+  </ul>
+{% endblock %}

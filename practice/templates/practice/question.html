@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Practice – {{ skillset.title }}{% endblock %}
+{% block content %}
+<h3>{{ skillset.title }}</h3>
+<form method="post">
+  {% csrf_token %}
+  <p><strong>{{ question.question_text }}</strong></p>
+
+  {% for lbl, txt in [('A',question.choice_a),('B',question.choice_b),
+                      ('C',question.choice_c),('D',question.choice_d)] %}
+    <label>
+      <input type="radio" name="choice" value="{{ lbl }}"
+        {% if show_result and selected == lbl %}checked{% endif %}>
+      {{ lbl }}. {{ txt }}
+    </label><br>
+  {% endfor %}
+
+  {% if show_result %}
+    {% if is_correct %}
+      <p style="color:green;">Correct! :tada:</p>
+    {% else %}
+      <p style="color:red;">Incorrect.</p>
+      {% if question.hints.all %}
+        <em>Hint:</em> {{ question.hints.first.text }}
+      {% endif %}
+      <p>Answer: <strong>{{ question.correct_answer }}</strong></p>
+    {% endif %}
+    <button formaction="{% url 'practice:start' skillset.id %}" type="submit">Next →</button>
+  {% else %}
+    <button type="submit">Submit</button>
+  {% endif %}
+</form>
+{% endblock %}
