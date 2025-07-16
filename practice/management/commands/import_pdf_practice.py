@@ -62,15 +62,15 @@ class Command(BaseCommand):
             question_text = f"What is {a} x {b}?"
 
             #auto generate 3 wrong answers
-            wrong = set()
+            wrongs = set()
             while len(wrongs) < 3:
                 wrong_candidate = correct + random.randint(-10,10)
                 if wrong_candidate > 0 and wrong_candidate != correct:
-                    wrong.add(wrong_candidate)
+                    wrongs.add(wrong_candidate)
             wrongs=list(wrongs)
 
             #combine correct + wrong answers
-            all_choices = list(wrong) + [correct]
+            all_choices = list(wrongs) + [correct]
             random.shuffle(all_choices)
 
             #determine correct
@@ -85,6 +85,7 @@ class Command(BaseCommand):
                 choice_b=str(all_choices[1]),
                 choice_c=str(all_choices[2]),
                 choice_d=str(all_choices[3]),
+                correct_answer=correct_letter,
                 explanation_text=f"Correct answer is {a} x {b} = {correct}"
             )
 
