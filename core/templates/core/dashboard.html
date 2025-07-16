@@ -11,7 +11,7 @@
       {% for grade in grades %}
         <li>
           <a href="{% url 'curriculum:domain_list' grade.level %}">
-            Grade {{ grade.level }}
+            {{ grade }}
           </a>
         </li>
       {% endfor %}

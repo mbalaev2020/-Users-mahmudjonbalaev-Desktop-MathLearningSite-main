@@ -8,7 +8,13 @@ class Grade(models.Model):
         ordering = ["level"]
 
     def __str__(self):
-        return f"Grade {self.level}"
+
+        #turn grades 9 and 10 to SHSAT and SAT
+        special_names = {
+            9: "SHSAT",
+            10: "SAT",
+        }
+        return special_names.get(self.level, f"Grade {self.level}")
 
 
 class Domain(models.Model):
