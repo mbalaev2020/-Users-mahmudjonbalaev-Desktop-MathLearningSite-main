@@ -19,19 +19,31 @@ def home_view(request):
     return render(request, "core/home.html")
 
 def grades_view(request, grade_id):
-    #show based on grade_id
+    # Map SHSAT & SAT to numeric levels
     if grade_id.upper() == "SHSAT":
-        page_title = "SHSAT Math Prep"
-        description = "Specialized lessons and practice for the SHSAT exam."
+        level = 9
     elif grade_id.upper() == "SAT":
-        page_title = "SAT Math Prep"
-        description = "Focused math prep for the SAT exam."
+        level = 10
     else:
-        page_title = f"Grade {grade_id} Math"
-        description = f"Lessons and practice for Grade {grade_id} students."
+        level = int(grade_id)
+
+    # Fetch Grade & prefetch Domains→Standards
+    grade = Grade.objects.prefetch_related("domains__standards").filter(level=level).first()
+
+    # Handle missing grade gracefully
+    if not grade:
+        return render(request, "core/grade_detail.html", {
+            "page_title": "Not Found",
+            "description": "No data available for this grade.",
+            "grade": None,
+        })
+
+    # Title auto-converts 9→SHSAT, 10→SAT via Grade.__str__()
+    page_title = str(grade)
+    description = f"Explore domains and standards for {grade}."
 
     return render(request, "core/grade_detail.html", {
-        "grade_id": grade_id,
+        "grade": grade,  # we now pass the full grade object
         "page_title": page_title,
-        "description": description
+        "description": description,
     })
