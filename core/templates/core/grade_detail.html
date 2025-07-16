@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 
-{% block title %}Grade {{ grade_number }} Math{% endblock %}
+{% block title %}{{ page_title }}{% endblock %}
 
 {% block content %}
 <section style="padding: 40px; text-align: center;">
-    <h1>Grade {{ grade_number }} Math</h1>
-    <p>Welcome to the Grade {{ grade_number }} math lessons and practice activities.</p>
-    <a href="{% url 'home' %}" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #0077cc; color: white; text-decoration: none; border-radius: 6px;">
+    <h1>{{ page_title }}</h1>
+    <p>{{ description }}</p>
+
+    <!-- Example: lessons or topics could go here -->
+    <div style="margin-top: 30px;">
+        <p>Coming soon: detailed lessons & practice!</p>
+    </div>
+
+    <a href="{% url 'home' %}" style="margin-top: 20px; display: inline-block; padding: 10px 20px; background: #0077cc; color: #fff; text-decoration: none; border-radius: 6px;">
         ← Back to Home
     </a>
 </section>

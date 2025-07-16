@@ -15,11 +15,23 @@ def register_view(request):
         form = UserCreationForm()
     return render(request, "core/register.html", {"form": form})
 
-def dashboard_view(request):
-    grades = Grade.objects.all()  # fetch grades
-    return render(request, "core/dashboard.html", {"grades": grades})
 def home_view(request):
     return render(request, "core/home.html")
 
-def grades_view(request, grade_number):
-    return render(request, "grade_detail.html", {"grade_number": grade_number})
+def grades_view(request, grade_id):
+    #show based on grade_id
+    if grade_id.upper() == "SHSAT":
+        page_title = "SHSAT Math Prep"
+        description = "Specialized lessons and practice for the SHSAT exam."
+    elif grade_id.upper() == "SAT":
+        page_title = "SAT Math Prep"
+        description = "Focused math prep for the SAT exam."
+    else:
+        page_title = f"Grade {grade_id} Math"
+        description = f"Lessons and practice for Grade {grade_id} students."
+
+    return render(request, "core/grade_detail.html", {
+        "grade_id": grade_id,
+        "page_title": page_title,
+        "description": description
+    })

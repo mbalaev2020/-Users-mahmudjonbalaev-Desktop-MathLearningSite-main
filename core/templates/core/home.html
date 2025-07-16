@@ -13,38 +13,32 @@
 
 <!-- Grades Section -->
 <section class="grades-section" style="padding: 50px 20px;">
-    <h2 style="text-align: center; margin-bottom: 30px;">Select Your Grade</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+    <h2 style="text-align: center; margin-bottom: 30px;">Select Your Grade or Exam</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+
+        <!-- Grades 3-8 -->
+        {% for g in "345678" %}
         <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>Grade 1</h3>
-            <p>Foundational math skills and early problem solving.</p>
-            <a href="{% url 'grade_detail' 1 %}" style="color: #0077cc;">Enter →</a>
+            <h3>Grade {{ g }}</h3>
+            <p>Math lessons and practice for Grade {{ g }} students.</p>
+            <a href="{% url 'grade_detail' g %}" style="color: #0077cc;">Enter →</a>
         </div>
+        {% endfor %}
+
+        <!-- SHSAT -->
         <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>Grade 2</h3>
-            <p>Building confidence with addition, subtraction, and shapes.</p>
-            <a href="{% url 'grade_detail' 2 %}" style="color: #0077cc;">Enter →</a>
+            <h3>SHSAT Prep</h3>
+            <p>Specialized practice for NYC SHSAT exam math sections.</p>
+            <a href="{% url 'grade_detail' 'SHSAT' %}" style="color: #0077cc;">Enter →</a>
         </div>
+
+        <!-- SAT -->
         <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>Grade 3</h3>
-            <p>Fractions, multiplication, and essential math fluency.</p>
-            <a href="{% url 'grade_detail' 3 %}" style="color: #0077cc;">Enter →</a>
-        </div>
-        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>Grade 4</h3>
-            <p>Advanced problem-solving, decimals, and geometry basics.</p>
-            <a href="{% url 'grade_detail' 4 %}" style="color: #0077cc;">Enter →</a>
-        </div>
-        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>Grade 5</h3>
-            <p>Pre-algebra concepts and deeper math understanding.</p>
-            <a href="{% url 'grade_detail' 5 %}" style="color: #0077cc;">Enter →</a>
+            <h3>SAT Prep</h3>
+            <p>Focused lessons and practice to improve your SAT math score.</p>
+            <a href="{% url 'grade_detail' 'SAT' %}" style="color: #0077cc;">Enter →</a>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
-<footer style="background: #333; color: #fff; text-align: center; padding: 20px;">
-    <p>&copy; {{ current_year }} Math Learning. All Rights Reserved.</p>
-</footer>
 {% endblock %}
