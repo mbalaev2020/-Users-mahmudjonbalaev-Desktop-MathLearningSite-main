@@ -20,3 +20,6 @@ def dashboard_view(request):
     return render(request, "core/dashboard.html", {"grades": grades})
 def home_view(request):
     return render(request, "core/home.html")
+
+def grades_view(request, grade_number):
+    return render(request, "grade_detail.html", {"grade_number": grade_number})

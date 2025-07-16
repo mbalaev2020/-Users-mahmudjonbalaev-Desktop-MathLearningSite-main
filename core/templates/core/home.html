@@ -1,25 +1,50 @@
 {% extends "base.html" %}
-{% block title %}Home{% endblock %}
+
+{% block title %}Welcome to Math Learning{% endblock %}
 
 {% block content %}
-  <h2>Welcome to Math Learning Platform</h2>
-
-  {% if user.is_authenticated %}
-    <p>Hello, <strong>{{ user.username }}</strong>! 🎉</p>
-
-      <a href="{% url 'dashboard' %}">Go to your Dashboard</a> |
-      <form method="post" action="{% url 'logout' %}" style="display:inline;">
-          {% csrf_token %}
-          <button type="submit" style="background:none;border:none;color:blue;cursor:pointer;">
-              Logout
-          </button>
-  </form>
-
-  {% else %}
-    <p>Start learning with practice sets, tests, and more.</p>
-    <p>
-      <a href="{% url 'login' %}">Login</a> or 
-      <a href="{% url 'register' %}">Sign Up</a> to get started!
+<!-- Hero Section -->
+<section class="hero" style="background: #f4f8ff; padding: 40px; text-align: center;">
+    <h1>Welcome to Math Learning</h1>
+    <p style="max-width: 600px; margin: 0 auto; font-size: 1.2rem;">
+        Choose your grade level to explore interactive lessons and practice exercises.
     </p>
-  {% endif %}
+</section>
+
+<!-- Grades Section -->
+<section class="grades-section" style="padding: 50px 20px;">
+    <h2 style="text-align: center; margin-bottom: 30px;">Select Your Grade</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+            <h3>Grade 1</h3>
+            <p>Foundational math skills and early problem solving.</p>
+            <a href="{% url 'grade_detail' 1 %}" style="color: #0077cc;">Enter →</a>
+        </div>
+        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+            <h3>Grade 2</h3>
+            <p>Building confidence with addition, subtraction, and shapes.</p>
+            <a href="{% url 'grade_detail' 2 %}" style="color: #0077cc;">Enter →</a>
+        </div>
+        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+            <h3>Grade 3</h3>
+            <p>Fractions, multiplication, and essential math fluency.</p>
+            <a href="{% url 'grade_detail' 3 %}" style="color: #0077cc;">Enter →</a>
+        </div>
+        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+            <h3>Grade 4</h3>
+            <p>Advanced problem-solving, decimals, and geometry basics.</p>
+            <a href="{% url 'grade_detail' 4 %}" style="color: #0077cc;">Enter →</a>
+        </div>
+        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
+            <h3>Grade 5</h3>
+            <p>Pre-algebra concepts and deeper math understanding.</p>
+            <a href="{% url 'grade_detail' 5 %}" style="color: #0077cc;">Enter →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background: #333; color: #fff; text-align: center; padding: 20px;">
+    <p>&copy; {{ current_year }} Math Learning. All Rights Reserved.</p>
+</footer>
 {% endblock %}
