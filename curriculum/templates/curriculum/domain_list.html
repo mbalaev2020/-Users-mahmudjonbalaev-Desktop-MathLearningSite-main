@@ -1,13 +1,17 @@
 {% extends "base.html" %}
+{% block title %}Grade {{ grade.level }} Domains{% endblock %}
 {% block content %}
-  <h2>{{ grade }}</h2>
-  <ul>
-    {% for d in domains %}
-      <li>
-        <a href="{% url 'curriculum:standard_list' grade.level d.slug %}">
-          {{ d.name }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<h2>Grade {{ grade.level }}</h2>
+
+<ul>
+  {% for domain in domains %}
+    <li>
+      <a href="{% url 'curriculum:standard_list' grade.level domain.slug %}">
+        {{ domain.name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'curriculum:grade_list' %}">← Back to Grades</a>
 {% endblock %}

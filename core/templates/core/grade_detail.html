@@ -16,7 +16,9 @@
           <ul>
             {% for standard in domain.standards.all %}
               <li>
-                <strong>{{ standard.code }}</strong>: {{ standard.description }}
+                 <a href="{% url 'curriculum:standard_detail' grade.level domain.slug standard.id %}">
+                  <strong>{{ standard.code }}</strong>: {{ standard.description }}
+                </a>
               </li>
             {% endfor %}
           </ul>

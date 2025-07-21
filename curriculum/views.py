@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.views.generic import ListView, DetailView
 from .models import Grade, Domain, Standard, Lesson
+from practice.models import SkillSet
 
 class GradeListView(ListView):
     model = Grade
@@ -35,6 +36,33 @@ class StandardListView(ListView):
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)
         ctx["domain"] = self.domain
+        ctx["grade"] = self.domain.grade
+        return ctx
+
+#new
+class StandardDetailView(DetailView):
+    model = Standard
+    template_name = "curriculum/standard_detail.html"
+    context_object_name = "standard"
+
+    def get_object(self):
+        #find correct standard
+        return get_object_or_404(
+            Standard,
+            pk=self.kwargs["pk"], #pk standard id
+            domain__grade__level=self.kwargs["grade_level"], # make sure correct grade level
+            domain__slug=self.kwargs["domain_slug"], # belongs to correct domain
+        )
+
+    def get_context_data(self, **kwargs):
+        ctx = super().get_context_data(**kwargs)
+
+        #get all skill sets for this standard
+        ctx["skillsets"] = SkillSet.objects.filter(related_standards=self.object)
+
+        #get lessons
+        ctx["lessons"] = self.object.lessons.all()
+
         return ctx
 
 class LessonDetailView(DetailView):

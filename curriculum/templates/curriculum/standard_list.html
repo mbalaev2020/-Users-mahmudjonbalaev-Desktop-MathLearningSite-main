@@ -1,11 +1,19 @@
-
 {% extends "base.html" %}
 {% block title %}{{ domain }} Standards{% endblock %}
 {% block content %}
 <h2>{{ domain }}</h2>
+
 {% for s in standards %}
   <h3>{{ s.code }}</h3>
-  <p>{{ s.description }}</p>
+
+  <!-- Make the description clickable -->
+  <p>
+    <a href="{% url 'curriculum:standard_detail' domain.grade.level domain.slug s.id %}">
+      {{ s.description }}
+    </a>
+  </p>
+
+  <!-- Show lessons -->
   <ul>
     {% for lesson in s.lessons.all %}
       <li>
@@ -18,5 +26,6 @@
     {% endfor %}
   </ul>
 {% endfor %}
-<a href="{% url 'curriculum:domain_list' domain.grade.level %}">← Back to domains</a>
+
+<a href="{% url 'grade_detail' grade.level %}">← Back to domains</a>
 {% endblock %}

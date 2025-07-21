@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ standard.description }}</h1>
+<p><strong>Domain:</strong> {{ standard.domain.name }}</p>
+<p><strong>Grade:</strong> {{ standard.domain.grade.level }}</p>
+
+<hr>
+<h2>Lessons</h2>
+{% if lessons %}
+    <ul>
+    {% for lesson in lessons %}
+        <li>{{ lesson.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No lessons available for this standard yet.</p>
+{% endif %}
+
+<hr>
+<h2>Practice Skill Sets</h2>
+{% if skillsets %}
+    <ul>
+    {% for s in skillsets %}
+        <li>{{ s.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No practice available for this standard yet.</p>
+{% endif %}
+
+<!-- ✅ Back to Standard List within same Domain -->
+<a href="{% url 'curriculum:standard_list' standard.domain.grade.level standard.domain.slug %}">
+  ← Back to Standards
+</a>
+{% endblock %}

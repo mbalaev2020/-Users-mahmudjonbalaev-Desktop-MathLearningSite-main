@@ -2,6 +2,7 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from .views import register_view, home_view, grades_view
+from curriculum.views import DomainListView
 
 urlpatterns = [
     path("", home_view, name="home"),

@@ -14,7 +14,7 @@
     {% endfor %}
   </ul>
 {% endif %}
-<a href="{% url 'curriculum:standard_list' lesson.standard.domain.grade.level lesson.standard.domain.slug %}">
+<a href="{% url 'grade_detail' lesson.standard.domain.grade.level %}">
   ← Back to standards
 </a>
 {% endblock %}
