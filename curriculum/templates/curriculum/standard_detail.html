@@ -39,7 +39,8 @@
 {% if skillsets %}
     <ul>
     {% for s in skillsets %}
-        <li>{{ s.title }}</li>
+        <li><a href = "{%  url 'practice:start' s.id %}">{{ s.title }}</a>
+        </li>
     {% endfor %}
     </ul>
 {% else %}
