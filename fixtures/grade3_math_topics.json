@@ -1,0 +1,82 @@
+[
+  {
+    "id": "topic1",
+    "title": "Understand Multiplication and Division of Whole Numbers",
+    "description": "Learn the meaning of multiplication as repeated addition and division as equal sharing or grouping. Includes visual models, examples, and real-world connections."
+  },
+  {
+    "id": "topic2",
+    "title": "Multiplication Facts: Use Patterns",
+    "description": "Explore how multiplication facts follow patterns using arrays, skip counting, and number properties."
+  },
+  {
+    "id": "topic3",
+    "title": "Apply Properties: Multiplication Facts for 3, 4, 6, 7, 8",
+    "description": "Apply the associative, commutative, and distributive properties to learn and practice multiplication facts."
+  },
+  {
+    "id": "topic4",
+    "title": "Use Multiplication to Divide: Division Facts",
+    "description": "Use multiplication relationships to find division facts, including using inverse operations and fact families."
+  },
+  {
+    "id": "topic5",
+    "title": "Fluently Multiply and Divide within 100",
+    "description": "Build speed and accuracy in solving multiplication and division problems up to 100."
+  },
+  {
+    "id": "topic6",
+    "title": "Connect Area to Multiplication and Addition",
+    "description": "Understand how area models can represent multiplication and addition."
+  },
+  {
+    "id": "topic7",
+    "title": "Represent and Interpret Data",
+    "description": "Use bar graphs, pictographs, and line plots to represent and analyze data."
+  },
+  {
+    "id": "topic8",
+    "title": "Use Strategies and Properties to Add and Subtract",
+    "description": "Apply mental math strategies and number properties to perform addition and subtraction efficiently."
+  },
+  {
+    "id": "topic9",
+    "title": "Fluently Add and Subtract within 1,000",
+    "description": "Use place value understanding and algorithms to add and subtract up to 1,000."
+  },
+  {
+    "id": "topic10",
+    "title": "Multiply by Multiples of 10",
+    "description": "Multiply one-digit numbers by multiples of 10 (10\u201390) using place value and properties of operations."
+  },
+  {
+    "id": "topic11",
+    "title": "Use Operations with Whole Numbers to Solve Problems",
+    "description": "Solve multi-step word problems using the four operations and represent using equations with unknowns."
+  },
+  {
+    "id": "topic12",
+    "title": "Understand Fractions as Numbers",
+    "description": "Understand fractions as part of a whole and as points on the number line."
+  },
+  {
+    "id": "topic13",
+    "title": "Fraction Equivalence and Comparison",
+    "description": "Learn to recognize and generate equivalent fractions and compare them using reasoning and visual models."
+  },
+  {
+    "id": "topic14",
+    "title": "Solve Time, Capacity, and Mass Problems",
+    "description": "Tell and write time to the nearest minute and solve word problems involving time, volume, and mass."
+  },
+  {
+    "id": "topic15",
+    "title": "Attributes of Two-Dimensional Shapes",
+    "description": "Classify two-dimensional shapes by their attributes such as number of sides, angles, and symmetry."
+  },
+  {
+    "id": "topic16",
+    "title": "Solve Perimeter Problems",
+    "description": "Find the perimeter of polygons by adding side lengths or using formulas."
+  }
+]

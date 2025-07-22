@@ -6,6 +6,24 @@
 <p><strong>Grade:</strong> {{ standard.domain.grade.level }}</p>
 
 <hr>
+
+<h2>Topics</h2>
+{% if standard.topics.all %}
+    <ul>
+    {% for topic in standard.topics.all %}
+    <li>
+        <strong>{{ topic.title }}</strong><br>
+        <p>{{ topic.description }}</p>
+    </li>
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <p>No topics yet for this standard</p>
+{% endif %}
+
+<hr>
+
 <h2>Lessons</h2>
 {% if lessons %}
     <ul>
@@ -17,7 +35,6 @@
     <p>No lessons available for this standard yet.</p>
 {% endif %}
 
-<hr>
 <h2>Practice Skill Sets</h2>
 {% if skillsets %}
     <ul>

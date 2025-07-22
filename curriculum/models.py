@@ -21,10 +21,11 @@ class Domain(models.Model):
     grade = models.ForeignKey(Grade, on_delete=models.CASCADE, related_name="domains")
     name  = models.CharField(max_length=100)
     slug  = models.SlugField(max_length=120, blank=True)
+    sort_order = models.PositiveSmallIntegerField(default=00)
 
     class Meta:
         unique_together = ("grade", "name")
-        ordering = ["grade", "name"]
+        ordering = ["grade__level", "sort_order", "name"]
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -52,6 +53,15 @@ class Lesson(models.Model):
 
     class Meta:
         ordering = ["order"]
+
+    def __str__(self):
+        return self.title
+
+
+class Topic(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    standard = models.ForeignKey(Standard, on_delete=models.CASCADE, related_name="topics")
 
     def __str__(self):
         return self.title
