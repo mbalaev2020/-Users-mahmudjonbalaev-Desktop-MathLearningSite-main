@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
 #point to fixtures explicitly
 FIXTURES_DIR = BASE_DIR / "fixtures"
-TOPICS_JSON = FIXTURES_DIR / "grade3_math_topics.json"
+TOPICS_JSON = FIXTURES_DIR / "math_topics.json"
 TOPICS_MAP_JSON = FIXTURES_DIR / "topics_map.json"
 
 class Command(BaseCommand):
