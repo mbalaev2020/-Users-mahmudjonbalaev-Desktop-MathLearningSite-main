@@ -47,8 +47,22 @@
     <p>No practice available for this standard yet.</p>
 {% endif %}
 
-<!-- ✅ Back to Standard List within same Domain -->
+<h2>Assessment</h2>
+{% if test %}
+    {% if test_unlocked %}
+        <p><strong>{{ test.title }}</strong></p>
+        <a class="btn btn-primary" href="{% url 'assessments:start' test.id %}">Take Test</a>
+    {% else %}
+        <p>📌 Complete all practice skill sets to unlock the test.</p>
+    {% endif %}
+{% else %}
+    <p>No test available for this standard.</p>
+{% endif %}
+
+<!-- Now properly outside the Assessment block -->
+<hr>
 <a href="{% url 'curriculum:standard_list' standard.domain.grade.level standard.domain.slug %}">
   ← Back to Standards
 </a>
+
 {% endblock %}

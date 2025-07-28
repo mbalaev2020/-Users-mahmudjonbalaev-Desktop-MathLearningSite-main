@@ -40,3 +40,13 @@ class Attempt(models.Model):
 
     class Meta:
         unique_together = ("user", "question")
+
+#track user
+class UserSkillProgress(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    skill_set = models.ForeignKey(SkillSet, on_delete=models.CASCADE)
+    is_mastered = models.BooleanField(default=False)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ("user", "skill_set")

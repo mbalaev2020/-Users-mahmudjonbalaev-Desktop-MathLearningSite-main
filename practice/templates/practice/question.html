@@ -3,6 +3,19 @@
 {% block content %}
   <h3>{{ skillset.title }}</h3>
 
+    {% if progress %}
+  <div style="margin-bottom: 1em;">
+    <strong>Progress:</strong> {{ progress.correct }} of {{ progress.total }} correct.
+    <br>
+    {% if progress.remaining > 0 %}
+      {{ progress.remaining }} question{{ progress.remaining|pluralize }} left to master this Skill Set.
+    {% else %}
+      Skill Set complete!
+    {% endif %}
+  </div>
+{% endif %}
+
+
   <form method="post">
     {% csrf_token %}
     <p><strong>{{ question.question_text }}</strong></p>

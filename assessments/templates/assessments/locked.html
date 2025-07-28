@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ test.title }}</h2>
+<p>{{ message }}</p>
+
+<a href="{% url 'curriculum:standard_list' standard.domain.grade.level standard.domain.slug %}">
+
+  ← Back to Curriculum
+</a>
+{% endblock %}
