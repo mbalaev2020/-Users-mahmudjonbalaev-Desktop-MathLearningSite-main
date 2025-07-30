@@ -1,18 +1,18 @@
 # core/views.py
-from django.contrib.auth.forms import UserCreationForm
+from .forms import CustomUserCreationForm #Imporint custom form
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from curriculum.models import Grade
 
 def register_view(request):
     if request.method == "POST":
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect("dashboard")
+            return redirect("home") #For now? Not too sure if we are making a dashboard
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
     return render(request, "core/register.html", {"form": form})
 
 def home_view(request):
