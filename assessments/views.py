@@ -9,7 +9,6 @@ def test_list(request):
     return render(request, "assessments/test_list.html", {"tests": Test.objects.all()})
 
 @login_required
-@login_required
 def test_start(request, test_id):
     test = get_object_or_404(Test, pk=test_id)
 
@@ -65,7 +64,16 @@ def question_view(request, ut_id, q_id):
         )
         return redirect("assessments:start", ut.test.id)
 
-    return render(request, "assessments/question.html", {"question": q, "ut": ut})
+    return render(request, "assessments/question.html", {
+        "question": q, 
+        "ut": ut,
+        "choices": [ #Fixing the choices as we get an error in the html loop
+            ('A', q.choice_a),
+            ('B', q.choice_b),
+            ('C', q.choice_c),
+            ('D', q.choice_d)
+        ],
+    })
 
 @login_required
 def summary_view(request, ut_id):
