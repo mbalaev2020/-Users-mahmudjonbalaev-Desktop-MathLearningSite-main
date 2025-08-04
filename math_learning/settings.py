@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'curriculum',
     'practice',
     'assessments',
+    'gamification',
+
+    'rest_framework',
 ]
 
 AUTH_USER_MODEL = 'core.User'

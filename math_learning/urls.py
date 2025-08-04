@@ -23,4 +23,6 @@ urlpatterns = [
     path("curriculum/", include("curriculum.urls")),
     path("practice/", include("practice.urls")),
     path("assessments/", include("assessments.urls")),
+
+    path("gamification/", include("gamification.urls")),
 ]

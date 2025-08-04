@@ -12,7 +12,7 @@ def test_list(request):
 def test_start(request, test_id):
     test = get_object_or_404(Test, pk=test_id)
 
-    # ✅ Check all related standards are mastered
+    # Check all related standards are mastered
     for standard in test.standards.all():
         if not has_mastered_standard(request.user, standard):
             return render(request, "assessments/locked.html", {
@@ -21,20 +21,20 @@ def test_start(request, test_id):
                 "message": "This test is locked. You must complete all related skills first."
             })
 
-    # ✅ Test already completed
+    # Test already completed
     ut, _ = UserTest.objects.get_or_create(user=request.user, test=test)
 
     if ut.completed:
         return redirect("assessments:summary", ut.id)
 
-    # ✅ Serve next unanswered question
+    # Serve next unanswered question
     answered = ut.answers.values_list("question_id", flat=True)
     q = test.questions.exclude(id__in=answered).first()
 
     if q:
         return redirect("assessments:question", ut.id, q.id)
 
-    # ✅ Calculate score and finish
+    # Calculate score and finish
     total = test.questions.count()
     if total == 0:
         return render(request, "assessments/locked.html", {

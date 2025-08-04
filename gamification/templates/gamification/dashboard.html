@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>🌱 Garden Dashboard</h1>
+
+<h2>Garden Health</h2>
+<p id="garden-health"></p>
+<p id="garden-theme"></p>
+
+<h2>Your Plants</h2>
+<ul id="plant-list"></ul>
+
+<h2>Login Streak</h2>
+<p id="streak-count"></p>
+
+<h2>Badges</h2>
+<ul id="badge-list"></ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("/api/gamification/dashboard/")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("garden-health").innerText = "Health: " + data.garden.health_score + "%";
+        document.getElementById("garden-theme").innerText = "Theme: " + data.garden.visual_theme;
+
+        data.plants.forEach(p => {
+          const li = document.createElement("li");
+          li.innerText = `${p.category} – ${p.growth_stage}`;
+          document.getElementById("plant-list").appendChild(li);
+        });
+
+        document.getElementById("streak-count").innerText = 
+          `Current: ${data.streak.current_streak}, Longest: ${data.streak.longest_streak}`;
+
+        data.badges.forEach(b => {
+          const li = document.createElement("li");
+          li.innerText = `${b.badge_type} (Unlocked on ${new Date(b.unlocked_on).toLocaleDateString()})`;
+          document.getElementById("badge-list").appendChild(li);
+        });
+      });
+  });
+</script>
+{% endblock %}
