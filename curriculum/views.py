@@ -19,7 +19,7 @@ class DomainListView(ListView):
 
     def get_queryset(self):
         self.grade = get_object_or_404(Grade, level=self.kwargs["grade_level"])
-        return self.grade.domains.all()
+        return self.grade.domains.order_by("sort_order")
 
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)

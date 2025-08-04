@@ -1,235 +1,161 @@
 ﻿Grade 3
-1. Operations & Algebraic Thinking
-* Multiplication and division within 100
-* Example problems: 5×7, 25÷5
-* Properties of operations: commutative, associative, distributive
-* Fluency: memorize single-digit products and related division facts
-* Word problems: solve 2-step problems using +, −, ×, ÷
-
-2. Number & Operations in Base 10
-* Place value and rounding
-* Round whole numbers to nearest 10 or 100
-* Addition and subtraction within 1,000
-* Multiplication by multiples of 10
-* Understand digits in a four-digit number
-* Thousands, hundreds, tens, ones; write in expanded form
-
-3. Number & Operations — Fractions
-* Understanding fractions as numbers
-* Unit fractions (1/b) and a/b for denominators 2, 3, 4, 6, 8
-* Fraction representation
-* Show fractions on a number line
-* Fraction equivalence and comparison
-* Generate & recognize equivalent fractions (½ = 2/4); compare using >, =, <
-
+1. Multiplication & Division
+* Practice multiplying and dividing numbers up to 100
+* Learn tricks to help (like flip-order or groups)
+* Learn facts like 5×7 or 25÷5
+* Memorize simple facts like 6×8 = 48
+* Solve word problems using +, −, ×, ÷
+2. Place Value & Number Sense
+* Understand place value (like 3,482 = 3,000 + 400 + 80 + 2)
+* Round numbers to the nearest 10 or 100
+* Add and subtract up to 1,000
+* Multiply by 10, 20, etc.
+* Learn about thousands, hundreds, tens, and ones
+3. Fractions
+* Understand fractions like ½ or ¾
+* Show fractions on number lines
+* See which fractions are the same (½ = 2/4)
+* Compare fractions (is ¾ bigger than ⅔?)
 4. Measurement & Data
-* Time and elapsed time
-* Tell/write time to the nearest minute; solve elapsed time word problems
-* Volume and mass: measure in grams, kilograms, liters; solve one-step word problems
-* Data displays: draw/interpret scaled pictographs & bar graphs; solve “how many more/less” problems
-* Line plots: measure lengths to halves/quarters and plot on line plots
-* Area and perimeter: recognize area as an attribute; measure by counting unit squares
-* Relate area to multiplication; find areas of composite shapes
-* Solve perimeter problems
-* Explore same-area, different-perimeter rectangles
-
-5. Geometry
-* Shape attributes and classification
-* Identify/classify shapes (triangles, quadrilaterals, pentagons, hexagons)
-* Understand shared attributes (e.g., rhombus, rectangle, square are all quadrilaterals)
+* Tell time to the minute; figure out how much time passed
+* Measure weight and liquid (grams, liters)
+* Make bar graphs and pictographs
+* Use line plots with fractions
+* Learn about area and perimeter
+* Find area using squares or multiplication
+* Solve real-world problems with area and perimeter
+5. Shapes & Geometry
+* Name and describe shapes like squares and triangles
+* Sort shapes by their sides and corners
 
 Grade 4
-1. Operations & Algebraic Thinking
-* Solve multi-step word problems with all four operations (including remainders)
-* Interpret expressions flexibly (letters as unknowns, mental estimation)
-* Study factors and multiples (1–100); categorize numbers as prime or composite
-* Generate & analyze number/shape patterns; explain features like alternating odd/even
-
-2. Number & Operations in Base Ten
-* Understand place value up to 1,000,000
-* Multiply & divide by powers of 10
-* Read/write numbers in words, numerals, expanded form; compare using >, <, =
-* Round multi-digit numbers to any place
-* Perform multi-digit addition and subtraction using the standard algorithm
-* Multiply four-digit numbers by one-digit
-* Multiply two-digit by two-digit (place-value strategies & models)
-* Divide four-digit dividends by one-digit divisors; interpret quotients & remainders
-
-2. Number & Operations — Fractions
-* Recognize equivalent fractions using visual models (denominators ≤100)
-* Compare fractions with different numerators/denominators (benchmarks/common denominators)
-* Build fractions via sums of unit fractions; add/subtract fractions referring to the same whole
-* Convert fractions with denominator 10 to denominator 100 and add them
-* Compare decimals to hundredths
-
-3. Measurement & Data
-* Convert within measurement systems: Metric (km–m–cm, kg–g, L–mL) and Customary (lb–oz, time units)
-* Record in conversion tables
-* Solve word problems using all operations on distances, time, volume, mass, and money
-* Create/interpret line plots with fractional units (½, ¼, ⅛)
-* Recognize and measure angles using a protractor (degrees); use additive angle properties
-
-4. Geometry
-* Draw & identify points, lines, line segments, rays, angles (right, acute, obtuse)
-* Identify parallel/perpendicular lines in figures
-* Classify shapes (triangles, quadrilaterals, etc.) based on side/angle properties
+1. Operations & Patterns
+* Solve tricky word problems using all 4 operations
+* Work with unknown numbers (like 3 × __ = 12)
+* Understand factors and multiples (like 5 is a factor of 20)
+* Find patterns in numbers and shapes
+2. Big Numbers & Place Value
+* Understand numbers up to 1 million
+* Multiply and divide by 10, 100, etc.
+* Write numbers in different ways
+* Round any number
+* Do big addition, subtraction, multiplication, and division problems
+3. Fractions & Decimals
+* Use pictures to understand fractions
+* Compare and add fractions (even with different bottoms)
+* Add decimals like 0.4 + 0.6 = 1.0
+4. Measurement & Data
+* Change between units (like cm to m or minutes to hours)
+* Solve real-world problems with time, weight, and money
+* Use line plots with fractions
+* Measure angles with a protractor
+5. Geometry
+* Know parts of shapes: points, lines, angles
+* Identify right, acute, and obtuse angles
+* Sort shapes based on sides and angles
 
 Grade 5
-1. Operations & Algebraic Thinking
-* Write and explain numerical expressions
-* Analyze patterns & relationships
-
-2. Number & Operations — Fractions
-* Add/subtract fractions with unlike denominators using equivalent fractions
-* Solve word problems involving addition/subtraction of fractions and mixed numbers
-* Multiply fractions and whole numbers; multiply two fractions
-* Divide unit fractions by whole numbers and vice versa
-
-3. Number & Operations in Base Ten
-* Understand decimals to thousandths (place value, operations)
-* Compare, round, and perform operations with decimals
-
+1. Expressions & Patterns
+* Write math expressions and explain them
+* Find and describe number patterns
+2. Fractions
+* Add and subtract fractions with different bottoms
+* Multiply fractions
+* Divide simple fractions (like ½ ÷ 3 or 4 ÷ ½)
+3. Decimals
+* Work with decimals to the thousandths
+* Compare, round, and calculate with decimals
 4. Measurement & Data
-* Convert like measurement units (customary and metric)
-* Represent and interpret data (line plots, volume models)
-
+* Convert between units (cm, m, g, kg)
+* Use line plots and find volume of boxes
 5. Geometry
-* Graph points on the coordinate plane (Quadrant I)
-* Classify two-dimensional figures by properties (parallel/perpendicular sides, angle measures)
+* Graph points on a grid
+* Sort shapes by sides and angles
 
 Grade 6
-1. Ratio & Proportional Reasoning
-* Understand ratios, ratio language, and unit rates using whole numbers and simple fractions
-* Solve problems via tables, tape diagrams, number lines, and coordinate graphs
-* Compute percents as rates per 100; solve missing-value and unit price problems
-* Convert measurement units using ratio reasoning (within metric or customary systems)
-
-2. The Number System
-* Divide fractions by fractions using models and equations
-* Fluently divide multi-digit numbers and multi-digit decimals
-* Add, subtract, multiply, and divide decimals to any place value
-* Find GCF (≤100) and LCM (≤12); use distributive property
-* Understand integers & rational numbers: opposites, ordering, absolute value
-* Graph points in all four quadrants and find distances
-
+1. Ratios & Percents
+* Understand and use ratios (like 3:1)
+* Solve problems with rates and unit price
+* Use percent (like 20% of 50)
+* Change units using ratios
+2. Numbers
+* Divide fractions by fractions
+* Do all operations with big numbers and decimals
+* Understand positive and negative numbers
+* Graph numbers on a number line
 3. Expressions & Equations
-* Write and evaluate expressions with exponents, variables, and whole-number operations
-* Identify parts of expressions (terms, factors, coefficients); use order of operations
-* Apply properties (distributive, commutative, associative) to rewrite expressions
-* Solve one-variable equations like x + p = q and interpret in context
-
+* Use variables (like x)
+* Know math rules like order of operations
+* Solve equations like x + 5 = 12
 4. Geometry
-* Compute areas of triangles, quadrilaterals, and polygons using composition/decomposition
-* Find volumes of right rectangular prisms with fractional edges using unit cubes and formulas V = l × w × h
-* Draw polygons in coordinate plane; compute side lengths
-* Use nets of prisms and pyramids to compute surface area
-* Relate area and volume models to identify perfect squares and cubes
-
-5. Statistics & Probability
-* Recognize statistical questions and representative sampling
-* Describe distributions via center, spread, and shape
-* Represent data visually (dot plots, histograms) and summarize with mean, median, mode, range, IQR, and MAD
-* Investigate simple probability models; compare predicted vs observed frequencies
+* Find area and volume of shapes
+* Use grids to draw shapes and find distances
+* Unfold 3D shapes into nets
+5. Statistics
+* Ask good data questions
+* Make and read dot plots and histograms
+* Understand averages and spreads
+* Learn simple probability
 
 Grade 7
-1. Ratio & Proportional Reasoning
-* Compute unit rates involving fractions (including different units, like speed)
-* Recognize and represent proportional relationships via graphs, tables, and equations
-
-2. The Number System
-* Add, subtract, multiply, and divide integers and rational numbers
-* Use integer arithmetic in context; extend operations to rational numbers
-
-3. Expressions & Equations
-* Solve word problems leading to linear equations of form p x + q = r and inequalities p x + q ≥ r
-* Graph inequality solutions on number lines; express variable ranges
-
+1. Proportional Relationships
+* Solve problems with unit rates (like 3 miles in ½ hour)
+* Use tables and graphs to show relationships
+2. Numbers
+* Work with all rational numbers (positive and negative)
+* Use math with real-world contexts
+3. Equations & Inequalities
+* Solve word problems that lead to equations
+* Graph inequalities on number lines
 4. Geometry
-* Construct and describe geometric figures and measure angles (right, acute, obtuse)
-* Solve volume problems involving right triangular prisms and right rectangular prisms
-
-5. Statistics & Probability
-* Construct and interpret box plots; compute interquartile range; identify outliers
-* Design and evaluate probability models
+* Build and measure shapes
+* Solve volume problems
+5. Data & Probability
+* Use box plots and find outliers
+* Build simple models for probability
 
 Grade 8
-1. Expressions & Equations
-* Solve linear equations, including formulas like perimeters and areas
-* Solve pairs of linear equations (systems) via inspection, tables, or graphs
-* Use variables in functions: understand y = m x + b; compare functions in multiple representations
-
+1. Equations & Systems
+* Solve all kinds of linear equations
+* Solve systems of two equations
+* Understand functions like y = mx + b
 2. Functions
-* Define functions as rules mapping inputs to outputs; understand their graphs as ordered pairs
-* Compare function properties across tables, graphs, or verbal descriptions
-
+* Know how inputs go to outputs
+* Use tables, graphs, and rules to describe functions
 3. Geometry
-* Define angles, circles, parallel & perpendicular lines, line segments
-* Represent transformations: translations, rotations, reflections; analyze symmetry
-* Explore slopes of parallel/perpendicular lines; apply in coordinate solutions
-* Use coordinates to compute perimeters and areas; find segment points partitioned by ratio
+* Learn about angles, lines, circles
+* Transform shapes (move, flip, turn)
+* Use coordinates to find perimeter and area
 
 SHSAT
-1. Arithmetic & Number Sense
-* Operations with integers, fractions, and decimals
-* Factors, multiples, prime numbers
-* GCF & LCM
-* Ratios, rates, proportions, and percent problems
-* Exponents, roots, order of operations
-* Absolute value
-
+1. Basic Math
+* Do all operations with whole numbers, fractions, and decimals
+* Use GCF and LCM
+* Solve problems with ratios and percentages
 2. Algebra
-* Solving linear equations and inequalities
-* Simplifying algebraic expressions
-* Evaluating expressions with variables
-* Translating word problems into algebraic equations
-* Solving systems of equations (basic)
-
-3. Geometry & Measurement
-* Perimeter, area, and volume of basic shapes (triangles, rectangles, circles, prisms)
-* Angles in polygons, parallel lines, and triangles
-* Coordinate geometry: distance between points, slope of a line
-* Transformations: reflections, rotations, translations
-* Scale drawings and similar figures
-
-4. Word Problems & Problem Solving
-* Multi-step problems combining arithmetic, algebra, and geometry
-* Work problems (rates, combined work)
-* Motion problems (distance, rate, time)
-* Logical reasoning puzzles
-* Number patterns & sequences
-
-5. Data Analysis & Probability
-* Mean, median, mode, range
-* Reading and interpreting graphs, tables, and charts
-* Simple probability & counting problems
+* Solve equations and simplify expressions
+* Translate word problems to equations
+3. Geometry
+* Find area, perimeter, and volume
+* Work with angles and graphs
+4. Word Problems
+* Solve tricky real-world problems (speed, time, logic)
+5. Data
+* Read charts and graphs
+* Understand averages and basic probability
 
 SAT
-1. Heart of Algebra
-* Linear equations and inequalities (single-variable and systems)
-* Solving absolute value equations and inequalities
-* Graphing linear equations & finding slope/intercept
-* Linear word problems (rates, proportions, percentages)
-
-2. Problem Solving & Data Analysis
-* Ratios, rates, proportions, and unit conversions
-* Percentages (increase, decrease, compound change)
-* Data interpretation from tables, charts, graphs
-* Probability and statistics (mean, median, mode, standard deviation)
-* Two-way tables and scatterplots
-
-3. Passport to Advanced Math
-* Quadratic equations (factoring, completing the square, quadratic formula)
-* Exponential and radical equations
-* Rational expressions and equations
-* Function notation and transformations
-* Analyzing nonlinear functions (polynomial, exponential)
-
-4. Additional Topics in Math
-* Geometry: angles, circles, triangles, area, volume
-* Trigonometry: sine, cosine, tangent (basic right-triangle trig)
-* Coordinate geometry: distance, midpoint, slope of lines
-* Complex numbers (i) and basic operations
-
-5. Calculator vs. No-Calculator Skills
-* Efficient mental math for no-calculator section
-* Strategic calculator use for multi-step problems
+1. Algebra
+* Solve and graph linear equations
+* Work with systems and word problems
+2. Data Analysis
+* Use ratios, percentages, and units
+* Read data from charts and graphs
+3. Advanced Math
+* Solve quadratic and exponential equations
+* Understand functions and graphs
+4. Geometry & Trig
+* Use formulas for area, volume, and angles
+* Basic trigonometry with right triangles
+5. Calculator Skills
+* Know when to use a calculator or mental math

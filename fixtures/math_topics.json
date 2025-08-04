@@ -1,907 +1,542 @@
 [
   {
     "id": "topic1",
-    "title": "Understand Multiplication and Division of Whole Numbers",
-    "description": "Discover the secret of multiplication as repeated addition and division as equal sharing or grouping. You'll see fun examples with visual models, examples, and things you see every day. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Practice multiplying and dividing numbers up to 100",
+    "description": "Practice multiplying and dividing numbers up to 100 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic2",
-    "title": "Multiplication Facts: Use Patterns",
-    "description": "Let's explore how multiplication facts follow patterns using arrays, skip counting, and number properties. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Learn tricks to help (like flip-order or groups)",
+    "description": "Learn tricks to help (like flip-order or groups) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic3",
-    "title": "Apply Properties: Multiplication Facts for 3, 4, 6, 7, 8",
-    "description": "Use cool tricks to the associative, commutative, and distributive properties to learn and practice with fun games and challenges multiplication facts. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Learn facts like 5\u00d77 or 25\u00f75",
+    "description": "Learn facts like 5\u00d77 or 25\u00f75 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic4",
-    "title": "Use Multiplication to Divide: Division Facts",
-    "description": "Use multiplication relationships to find division facts, including using inverse operations and fact families. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Memorize simple facts like 6\u00d78 = 48",
+    "description": "Memorize simple facts like 6\u00d78 = 48 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic5",
-    "title": "Fluently Multiply and Divide within 100",
-    "description": "Build speed and accuracy in solving multiplication and division problems up to 100. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve word problems using +, \u2212, \u00d7, \u00f7",
+    "description": "Solve word problems using +, \u2212, \u00d7, \u00f7 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic6",
-    "title": "Connect Area to Multiplication and Addition",
-    "description": "Understand how area models can represent multiplication and addition. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand place value (like 3,482 = 3,000 + 400 + 80 + 2)",
+    "description": "Understand place value (like 3,482 = 3,000 + 400 + 80 + 2) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic7",
-    "title": "Represent and Interpret Data",
-    "description": "Use bar graphs, pictographs, and line plots to represent and analyze data. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Round numbers to the nearest 10 or 100",
+    "description": "Round numbers to the nearest 10 or 100 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic8",
-    "title": "Use Strategies and Properties to Add and Subtract",
-    "description": "Use cool tricks to mental math strategies and number properties to perform addition and subtraction efficiently. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Add and subtract up to 1,000",
+    "description": "Add and subtract up to 1,000 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic9",
-    "title": "Fluently Add and Subtract within 1,000",
-    "description": "Use place value understanding and algorithms to add and subtract up to 1,000. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Multiply by 10, 20, etc.",
+    "description": "Multiply by 10, 20, etc. \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic10",
-    "title": "Multiply by Multiples of 10",
-    "description": "Multiply one-digit numbers by multiples of 10 (10\u201390) using place value and properties of operations. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Learn about thousands, hundreds, tens, and ones",
+    "description": "Learn about thousands, hundreds, tens, and ones \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic11",
-    "title": "Use Operations with Whole Numbers to Solve Problems",
-    "description": "Solve multi-step word problems using the four operations and represent using equations with unknowns. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand fractions like 1\u20442 or 3\u20444",
+    "description": "Understand fractions like 1\u20442 or 3\u20444 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic12",
-    "title": "Understand Fractions as Numbers",
-    "description": "Understand fractions as part of a whole and as points on the number line. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Show fractions on number lines",
+    "description": "Show fractions on number lines \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic13",
-    "title": "Fraction Equivalence and Comparison",
-    "description": "Learn to recognize and generate equivalent fractions and compare them using reasoning and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "See which fractions are the same (1\u20442 = 2/4)",
+    "description": "See which fractions are the same (1\u20442 = 2/4) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic14",
-    "title": "Solve Time, Capacity, and Mass Problems",
-    "description": "Tell and write time to the nearest minute and solve word problems involving time, volume, and mass. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Compare fractions (is 3\u20444 bigger than 2\u20443?)",
+    "description": "Compare fractions (is 3\u20444 bigger than 2\u20443?) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic15",
-    "title": "Attributes of Two-Dimensional Shapes",
-    "description": "Classify two-dimensional shapes by their attributes such as number of sides, angles, and symmetry. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Tell time to the minute; figure out how much time passed",
+    "description": "Tell time to the minute; figure out how much time passed \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic16",
-    "title": "Solve Perimeter Problems",
-    "description": "Find the perimeter of polygons by adding side lengths or using formulas. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Measure weight and liquid (grams, liters)",
+    "description": "Measure weight and liquid (grams, liters) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic17",
-    "title": "Solve multi-step word problems with all four operations (including remainders)",
-    "description": "Learn how to solve multi-step word problems with all four operations (including remainders). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Make bar graphs and pictographs",
+    "description": "Make bar graphs and pictographs \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic18",
-    "title": "Practice Solve multi-step word problems with all four operations (including remainders) Concepts",
-    "description": "Reinforce understanding of solve multi-step word problems with all four operations (including remainders) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use line plots with fractions",
+    "description": "Use line plots with fractions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic19",
-    "title": "Interpret expressions flexibly (letters as unknowns, mental estimation)",
-    "description": "Learn how to interpret expressions flexibly (letters as unknowns, mental estimation). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Learn about area and perimeter",
+    "description": "Learn about area and perimeter \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic20",
-    "title": "Practice Interpret expressions flexibly (letters as unknowns, mental estimation) Concepts",
-    "description": "Reinforce understanding of interpret expressions flexibly (letters as unknowns, mental estimation) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Find area using squares or multiplication",
+    "description": "Find area using squares or multiplication \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic21",
-    "title": "Study factors and multiples (1\u2013100); categorize numbers as prime or composite",
-    "description": "Learn how to study factors and multiples (1\u2013100); categorize numbers as prime or composite. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve real-world problems with area and perimeter",
+    "description": "Solve real-world problems with area and perimeter \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic22",
-    "title": "Practice Study factors and multiples (1\u2013100); categorize numbers as prime or composite Concepts",
-    "description": "Reinforce understanding of study factors and multiples (1\u2013100); categorize numbers as prime or composite with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Name and describe shapes like squares and triangles",
+    "description": "Name and describe shapes like squares and triangles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic23",
-    "title": "Generate & analyze number/shape patterns; explain features like alternating odd/even",
-    "description": "Learn how to generate & analyze number/shape patterns; explain features like alternating odd/even. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Sort shapes by their sides and corners",
+    "description": "Sort shapes by their sides and corners \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic24",
-    "title": "Practice Generate & analyze number/shape patterns; explain features like alternating odd/even Concepts",
-    "description": "Reinforce understanding of generate & analyze number/shape patterns; explain features like alternating odd/even with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve tricky word problems using all 4 operations",
+    "description": "Solve tricky word problems using all 4 operations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic25",
-    "title": "Understand place value up to 1,000,000",
-    "description": "Learn how to understand place value up to 1,000,000. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Work with unknown numbers (like 3 \u00d7 __ = 12)",
+    "description": "Work with unknown numbers (like 3 \u00d7 __ = 12) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic26",
-    "title": "Multiply & divide by powers of 10",
-    "description": "Learn how to multiply & divide by powers of 10. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand factors and multiples (like 5 is a factor of 20)",
+    "description": "Understand factors and multiples (like 5 is a factor of 20) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic27",
-    "title": "Practice Multiply & divide by powers of 10 Concepts",
-    "description": "Reinforce understanding of multiply & divide by powers of 10 with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Find patterns in numbers and shapes",
+    "description": "Find patterns in numbers and shapes \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic28",
-    "title": "Read/write numbers in words, numerals, expanded form; compare using >, <, =",
-    "description": "Learn how to read/write numbers in words, numerals, expanded form; compare using >, <, =. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand numbers up to 1 million",
+    "description": "Understand numbers up to 1 million \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic29",
-    "title": "Practice Read/write numbers in words, numerals, expanded form; compare using >, <, = Concepts",
-    "description": "Reinforce understanding of read/write numbers in words, numerals, expanded form; compare using >, <, = with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Multiply and divide by 10, 100, etc.",
+    "description": "Multiply and divide by 10, 100, etc. \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic30",
-    "title": "Round multi-digit numbers to any place",
-    "description": "Learn how to round multi-digit numbers to any place. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Write numbers in different ways",
+    "description": "Write numbers in different ways \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic31",
-    "title": "Perform multi-digit addition and subtraction using the standard algorithm",
-    "description": "Learn how to perform multi-digit addition and subtraction using the standard algorithm. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Round any number",
+    "description": "Round any number \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic32",
-    "title": "Practice Perform multi-digit addition and subtraction using the standard algorithm Concepts",
-    "description": "Reinforce understanding of perform multi-digit addition and subtraction using the standard algorithm with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Do big addition, subtraction, multiplication, and division problems",
+    "description": "Do big addition, subtraction, multiplication, and division problems \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic33",
-    "title": "Multiply four-digit numbers by one-digit",
-    "description": "Learn how to multiply four-digit numbers by one-digit. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use pictures to understand fractions",
+    "description": "Use pictures to understand fractions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic34",
-    "title": "Multiply two-digit by two-digit (place-value strategies & models)",
-    "description": "Learn how to multiply two-digit by two-digit (place-value strategies & models). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Compare and add fractions (even with different bottoms)",
+    "description": "Compare and add fractions (even with different bottoms) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic35",
-    "title": "Practice Multiply two-digit by two-digit (place-value strategies & models) Concepts",
-    "description": "Reinforce understanding of multiply two-digit by two-digit (place-value strategies & models) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Add decimals like 0.4 + 0.6 = 1.0",
+    "description": "Add decimals like 0.4 + 0.6 = 1.0 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic36",
-    "title": "Divide four-digit dividends by one-digit divisors; interpret quotients & remainders",
-    "description": "Learn how to divide four-digit dividends by one-digit divisors; interpret quotients & remainders. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Change between units (like cm to m or minutes to hours)",
+    "description": "Change between units (like cm to m or minutes to hours) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic37",
-    "title": "Practice Divide four-digit dividends by one-digit divisors; interpret quotients & remainders Concepts",
-    "description": "Reinforce understanding of divide four-digit dividends by one-digit divisors; interpret quotients & remainders with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve real-world problems with time, weight, and money",
+    "description": "Solve real-world problems with time, weight, and money \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic38",
-    "title": "Recognize equivalent fractions using visual models (denominators \u2264100)",
-    "description": "Learn how to recognize equivalent fractions using visual models (denominators \u2264100). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use line plots with fractions",
+    "description": "Use line plots with fractions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic39",
-    "title": "Practice Recognize equivalent fractions using visual models (denominators \u2264100) Concepts",
-    "description": "Reinforce understanding of recognize equivalent fractions using visual models (denominators \u2264100) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Measure angles with a protractor",
+    "description": "Measure angles with a protractor \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic40",
-    "title": "Compare fractions with different numerators/denominators (benchmarks/common denominators)",
-    "description": "Learn how to compare fractions with different numerators/denominators (benchmarks/common denominators). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Know parts of shapes: points, lines, angles",
+    "description": "Know parts of shapes: points, lines, angles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic41",
-    "title": "Practice Compare fractions with different numerators/denominators (benchmarks/common denominators) Concepts",
-    "description": "Reinforce understanding of compare fractions with different numerators/denominators (benchmarks/common denominators) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Identify right, acute, and obtuse angles",
+    "description": "Identify right, acute, and obtuse angles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic42",
-    "title": "Build fractions via sums of unit fractions; add/subtract fractions referring to the same whole",
-    "description": "Learn how to build fractions via sums of unit fractions; add/subtract fractions referring to the same whole. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Sort shapes based on sides and angles",
+    "description": "Sort shapes based on sides and angles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic43",
-    "title": "Practice Build fractions via sums of unit fractions; add/subtract fractions referring to the same whole Concepts",
-    "description": "Reinforce understanding of build fractions via sums of unit fractions; add/subtract fractions referring to the same whole with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Write math expressions and explain them",
+    "description": "Write math expressions and explain them \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic44",
-    "title": "Convert fractions with denominator 10 to denominator 100 and add them",
-    "description": "Learn how to convert fractions with denominator 10 to denominator 100 and add them. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Find and describe number patterns",
+    "description": "Find and describe number patterns \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic45",
-    "title": "Practice Convert fractions with denominator 10 to denominator 100 and add them Concepts",
-    "description": "Reinforce understanding of convert fractions with denominator 10 to denominator 100 and add them with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Add and subtract fractions with different bottoms",
+    "description": "Add and subtract fractions with different bottoms \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic46",
-    "title": "Compare decimals to hundredths",
-    "description": "Learn how to compare decimals to hundredths. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Multiply fractions",
+    "description": "Multiply fractions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic47",
-    "title": "Convert within measurement systems: Metric (km\u2013m\u2013cm, kg\u2013g, L\u2013mL) and Customary (lb\u2013oz, time units)",
-    "description": "Learn how to convert within measurement systems: metric (km\u2013m\u2013cm, kg\u2013g, l\u2013ml) and customary (lb\u2013oz, time units). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Divide simple fractions (like 1\u20442 \u00f7 3 or 4 \u00f7 1\u20442)",
+    "description": "Divide simple fractions (like 1\u20442 \u00f7 3 or 4 \u00f7 1\u20442) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic48",
-    "title": "Practice Convert within measurement systems Concepts",
-    "description": "Reinforce understanding of convert within measurement systems: metric (km\u2013m\u2013cm, kg\u2013g, l\u2013ml) and customary (lb\u2013oz, time units) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Work with decimals to the thousandths",
+    "description": "Work with decimals to the thousandths \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic49",
-    "title": "Record in conversion tables",
-    "description": "Learn how to record in conversion tables. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Compare, round, and calculate with decimals",
+    "description": "Compare, round, and calculate with decimals \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic50",
-    "title": "Solve word problems using all operations on distances, time, volume, mass, and money",
-    "description": "Learn how to solve word problems using all operations on distances, time, volume, mass, and money. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Convert between units (cm, m, g, kg)",
+    "description": "Convert between units (cm, m, g, kg) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic51",
-    "title": "Practice Solve word problems using all operations on distances, time, volume, mass, and money Concepts",
-    "description": "Reinforce understanding of solve word problems using all operations on distances, time, volume, mass, and money with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use line plots and find volume of boxes",
+    "description": "Use line plots and find volume of boxes \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic52",
-    "title": "Create/interpret line plots with fractional units (1\u20442, 1\u20444, 1\u20448)",
-    "description": "Learn how to create/interpret line plots with fractional units (1\u20442, 1\u20444, 1\u20448). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Graph points on a grid",
+    "description": "Graph points on a grid \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic53",
-    "title": "Practice Create/interpret line plots with fractional units (1\u20442, 1\u20444, 1\u20448) Concepts",
-    "description": "Reinforce understanding of create/interpret line plots with fractional units (1\u20442, 1\u20444, 1\u20448) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Sort shapes by sides and angles",
+    "description": "Sort shapes by sides and angles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic54",
-    "title": "Recognize and measure angles using a protractor (degrees); use additive angle properties",
-    "description": "Learn how to recognize and measure angles using a protractor (degrees); use additive angle properties. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand and use ratios (like 3:1)",
+    "description": "Understand and use ratios (like 3:1) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic55",
-    "title": "Practice Recognize and measure angles using a protractor (degrees); use additive angle properties Concepts",
-    "description": "Reinforce understanding of recognize and measure angles using a protractor (degrees); use additive angle properties with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve problems with rates and unit price",
+    "description": "Solve problems with rates and unit price \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic56",
-    "title": "Draw & identify points, lines, line segments, rays, angles (right, acute, obtuse)",
-    "description": "Learn how to draw & identify points, lines, line segments, rays, angles (right, acute, obtuse). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use percent (like 20% of 50)",
+    "description": "Use percent (like 20% of 50) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic57",
-    "title": "Practice Draw & identify points, lines, line segments, rays, angles (right, acute, obtuse) Concepts",
-    "description": "Reinforce understanding of draw & identify points, lines, line segments, rays, angles (right, acute, obtuse) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Change units using ratios",
+    "description": "Change units using ratios \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic58",
-    "title": "Identify parallel/perpendicular lines in figures",
-    "description": "Learn how to identify parallel/perpendicular lines in figures. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Divide fractions by fractions",
+    "description": "Divide fractions by fractions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic59",
-    "title": "Classify shapes (triangles, quadrilaterals, etc.) based on side/angle properties",
-    "description": "Learn how to classify shapes (triangles, quadrilaterals, etc.) based on side/angle properties. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Do all operations with big numbers and decimals",
+    "description": "Do all operations with big numbers and decimals \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic60",
-    "title": "Practice Classify shapes (triangles, quadrilaterals, etc.) based on side/angle properties Concepts",
-    "description": "Reinforce understanding of classify shapes (triangles, quadrilaterals, etc.) based on side/angle properties with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand positive and negative numbers",
+    "description": "Understand positive and negative numbers \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic61",
-    "title": "Write and explain numerical expressions",
-    "description": "Learn how to write and explain numerical expressions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Graph numbers on a number line",
+    "description": "Graph numbers on a number line \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic62",
-    "title": "Practice Write and explain numerical expressions Concepts",
-    "description": "Reinforce understanding of write and explain numerical expressions with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use variables (like x)",
+    "description": "Use variables (like x) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic63",
-    "title": "Analyze patterns & relationships",
-    "description": "Learn how to analyze patterns & relationships. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Know math rules like order of operations",
+    "description": "Know math rules like order of operations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic64",
-    "title": "Practice Analyze patterns & relationships Concepts",
-    "description": "Reinforce understanding of analyze patterns & relationships with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve equations like x + 5 = 12",
+    "description": "Solve equations like x + 5 = 12 \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic65",
-    "title": "Add/subtract fractions with unlike denominators using equivalent fractions",
-    "description": "Learn how to add/subtract fractions with unlike denominators using equivalent fractions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Find area and volume of shapes",
+    "description": "Find area and volume of shapes \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic66",
-    "title": "Practice Add/subtract fractions with unlike denominators using equivalent fractions Concepts",
-    "description": "Reinforce understanding of add/subtract fractions with unlike denominators using equivalent fractions with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use grids to draw shapes and find distances",
+    "description": "Use grids to draw shapes and find distances \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic67",
-    "title": "Solve word problems involving addition/subtraction of fractions and mixed numbers",
-    "description": "Learn how to solve word problems involving addition/subtraction of fractions and mixed numbers. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Unfold 3D shapes into nets",
+    "description": "Unfold 3D shapes into nets \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic68",
-    "title": "Practice Solve word problems involving addition/subtraction of fractions and mixed numbers Concepts",
-    "description": "Reinforce understanding of solve word problems involving addition/subtraction of fractions and mixed numbers with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Ask good data questions",
+    "description": "Ask good data questions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic69",
-    "title": "Multiply fractions and whole numbers; multiply two fractions",
-    "description": "Learn how to multiply fractions and whole numbers; multiply two fractions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Make and read dot plots and histograms",
+    "description": "Make and read dot plots and histograms \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic70",
-    "title": "Practice Multiply fractions and whole numbers; multiply two fractions Concepts",
-    "description": "Reinforce understanding of multiply fractions and whole numbers; multiply two fractions with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand averages and spreads",
+    "description": "Understand averages and spreads \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic71",
-    "title": "Divide unit fractions by whole numbers and vice versa",
-    "description": "Learn how to divide unit fractions by whole numbers and vice versa. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Learn simple probability",
+    "description": "Learn simple probability \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic72",
-    "title": "Understand decimals to thousandths (place value, operations)",
-    "description": "Learn how to understand decimals to thousandths (place value, operations). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve problems with unit rates (like 3 miles in 1\u20442 hour)",
+    "description": "Solve problems with unit rates (like 3 miles in 1\u20442 hour) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic73",
-    "title": "Practice Understand decimals to thousandths Concepts",
-    "description": "Reinforce understanding of decimals to thousandths (place value, operations) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use tables and graphs to show relationships",
+    "description": "Use tables and graphs to show relationships \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic74",
-    "title": "Compare, round, and perform operations with decimals",
-    "description": "Learn how to compare, round, and perform operations with decimals. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Work with all rational numbers (positive and negative)",
+    "description": "Work with all rational numbers (positive and negative) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic75",
-    "title": "Convert like measurement units (customary and metric)",
-    "description": "Learn how to convert like measurement units (customary and metric). Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use math with real-world contexts",
+    "description": "Use math with real-world contexts \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic76",
-    "title": "Practice Convert like measurement units Concepts",
-    "description": "Reinforce understanding of convert like measurement units (customary and metric) with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve word problems that lead to equations",
+    "description": "Solve word problems that lead to equations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic77",
-    "title": "Represent and interpret data (line plots, volume models)",
-    "description": "Learn how to represent and interpret data using line plots and volume models. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Graph inequalities on number lines",
+    "description": "Graph inequalities on number lines \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic78",
-    "title": "Practice Represent and interpret data Concepts",
-    "description": "Reinforce understanding of representing and interpreting data using line plots and volume models with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Build and measure shapes",
+    "description": "Build and measure shapes \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic79",
-    "title": "Graph points on the coordinate plane (Quadrant I)",
-    "description": "Learn how to graph points on the coordinate plane in Quadrant I. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve volume problems",
+    "description": "Solve volume problems \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic80",
-    "title": "Classify two-dimensional figures by properties (parallel/perpendicular sides, angle measures)",
-    "description": "Learn how to classify two-dimensional figures by their properties such as parallel/perpendicular sides and angle measures. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use box plots and find outliers",
+    "description": "Use box plots and find outliers \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic81",
-    "title": "Practice Classify two-dimensional figures Concepts",
-    "description": "Reinforce understanding of classifying two-dimensional figures by properties with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Build simple models for probability",
+    "description": "Build simple models for probability \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic82",
-    "title": "Understand ratios, ratio language, and unit rates using whole numbers and simple fractions",
-    "description": "Learn how to understand ratios, ratio language, and unit rates using whole numbers and simple fractions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve all kinds of linear equations",
+    "description": "Solve all kinds of linear equations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic83",
-    "title": "Practice Understand ratios and unit rates Concepts",
-    "description": "Reinforce understanding of ratios, ratio language, and unit rates using guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve systems of two equations",
+    "description": "Solve systems of two equations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic84",
-    "title": "Solve problems via tables, tape diagrams, number lines, and coordinate graphs",
-    "description": "Learn how to solve ratio problems using tables, tape diagrams, number lines, and coordinate graphs. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand functions like y = mx + b",
+    "description": "Understand functions like y = mx + b \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic85",
-    "title": "Practice Solve ratio problems via visual models Concepts",
-    "description": "Reinforce understanding of solving ratio problems using tables, tape diagrams, number lines, and coordinate graphs with guided practice with fun games and challenges. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Know how inputs go to outputs",
+    "description": "Know how inputs go to outputs \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic86",
-    "title": "Compute percents as rates per 100; solve missing-value and unit price problems",
-    "description": "Learn how to compute percents as rates per 100 and solve missing-value and unit price problems. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use tables, graphs, and rules to describe functions",
+    "description": "Use tables, graphs, and rules to describe functions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic87",
-    "title": "Practice Compute percents and unit price Concepts",
-    "description": "Reinforce understanding of computing percents as rates per 100 and solving missing-value problems with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Learn about angles, lines, circles",
+    "description": "Learn about angles, lines, circles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic88",
-    "title": "Convert measurement units using ratio reasoning (within metric or customary systems)",
-    "description": "Learn how to convert measurement units using ratio reasoning within metric or customary systems. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Transform shapes (move, flip, turn)",
+    "description": "Transform shapes (move, flip, turn) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic89",
-    "title": "Practice Convert measurement units Concepts",
-    "description": "Reinforce understanding of converting measurement units using ratio reasoning with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use coordinates to find perimeter and area",
+    "description": "Use coordinates to find perimeter and area \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic90",
-    "title": "Divide fractions by fractions using models and equations",
-    "description": "Learn how to divide fractions by fractions using models and equations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Do all operations with whole numbers, fractions, and decimals",
+    "description": "Do all operations with whole numbers, fractions, and decimals \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic91",
-    "title": "Practice Divide fractions by fractions Concepts",
-    "description": "Reinforce understanding of dividing fractions by fractions using models and equations with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use GCF and LCM",
+    "description": "Use GCF and LCM \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic92",
-    "title": "Fluently divide multi-digit numbers and multi-digit decimals",
-    "description": "Learn how to fluently divide multi-digit numbers and multi-digit decimals. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve problems with ratios and percentages",
+    "description": "Solve problems with ratios and percentages \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic93",
-    "title": "Add, subtract, multiply, and divide decimals to any place value",
-    "description": "Learn how to add, subtract, multiply, and divide decimals to any place value. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve equations and simplify expressions",
+    "description": "Solve equations and simplify expressions \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic94",
-    "title": "Practice Operations with decimals Concepts",
-    "description": "Reinforce understanding of adding, subtracting, multiplying, and dividing decimals with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Translate word problems to equations",
+    "description": "Translate word problems to equations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic95",
-    "title": "Find GCF (\u2264100) and LCM (\u226412); use distributive property",
-    "description": "Learn how to find greatest common factors and least common multiples and apply the distributive property. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Find area, perimeter, and volume",
+    "description": "Find area, perimeter, and volume \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic96",
-    "title": "Practice Find GCF and LCM Concepts",
-    "description": "Reinforce understanding of finding greatest common factors and least common multiples with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Work with angles and graphs",
+    "description": "Work with angles and graphs \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic97",
-    "title": "Understand integers & rational numbers: opposites, ordering, absolute value",
-    "description": "Learn how to understand integers and rational numbers, their opposites, ordering on a number line, and absolute value. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve tricky real-world problems (speed, time, logic)",
+    "description": "Solve tricky real-world problems (speed, time, logic) \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic98",
-    "title": "Practice Integers and rational numbers Concepts",
-    "description": "Reinforce understanding of integers and rational numbers with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Read charts and graphs",
+    "description": "Read charts and graphs \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic99",
-    "title": "Graph points in all four quadrants and find distances",
-    "description": "Learn how to graph points in all four quadrants of the coordinate plane and find distances between points. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand averages and basic probability",
+    "description": "Understand averages and basic probability \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic100",
-    "title": "Write and evaluate expressions with exponents, variables, and whole-number operations",
-    "description": "Learn how to write and evaluate expressions with exponents, variables, and whole-number operations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve and graph linear equations",
+    "description": "Solve and graph linear equations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic101",
-    "title": "Practice Write and evaluate expressions Concepts",
-    "description": "Reinforce understanding of writing and evaluating expressions with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Work with systems and word problems",
+    "description": "Work with systems and word problems \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic102",
-    "title": "Identify parts of expressions (terms, factors, coefficients); use order of operations",
-    "description": "Learn how to identify parts of expressions such as terms, factors, coefficients and apply the order of operations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use ratios, percentages, and units",
+    "description": "Use ratios, percentages, and units \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic103",
-    "title": "Practice Identify parts of expressions Concepts",
-    "description": "Reinforce understanding of identifying parts of expressions with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Read data from charts and graphs",
+    "description": "Read data from charts and graphs \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic104",
-    "title": "Apply properties (distributive, commutative, associative) to rewrite expressions",
-    "description": "Learn how to apply properties like distributive, commutative, and associative to rewrite expressions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Solve quadratic and exponential equations",
+    "description": "Solve quadratic and exponential equations \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic105",
-    "title": "Solve one-variable equations like x + p = q and interpret in context",
-    "description": "Learn how to solve one-variable equations such as x + p = q and interpret solutions in real-world contexts. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Understand functions and graphs",
+    "description": "Understand functions and graphs \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic106",
-    "title": "Compute areas of triangles, quadrilaterals, and polygons using composition/decomposition",
-    "description": "Learn how to compute areas of triangles, quadrilaterals, and polygons by composing and decomposing shapes. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Use formulas for area, volume, and angles",
+    "description": "Use formulas for area, volume, and angles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic107",
-    "title": "Find volumes of right rectangular prisms with fractional edges using unit cubes and formulas V = l \u00d7 w \u00d7 h",
-    "description": "Learn how to find volumes of right rectangular prisms with fractional edges using unit cubes and volume formulas. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Basic trigonometry with right triangles",
+    "description": "Basic trigonometry with right triangles \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   },
   {
     "id": "topic108",
-    "title": "Draw polygons in coordinate plane; compute side lengths",
-    "description": "Learn how to draw polygons in the coordinate plane and compute side lengths between points. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic109",
-    "title": "Use nets of prisms and pyramids to compute surface area",
-    "description": "Learn how to use nets of prisms and pyramids to compute surface area. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic110",
-    "title": "Relate area and volume models to identify perfect squares and cubes",
-    "description": "Learn how to relate area and volume models to identify perfect squares and perfect cubes. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic111",
-    "title": "Recognize statistical questions and representative sampling",
-    "description": "Learn how to recognize statistical questions and understand representative sampling. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic112",
-    "title": "Practice Statistical questions and sampling Concepts",
-    "description": "Reinforce understanding of statistical questions and representative sampling with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic113",
-    "title": "Describe distributions via center, spread, and shape",
-    "description": "Learn how to describe data distributions in terms of center, spread, and shape. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic114",
-    "title": "Practice Describe distributions Concepts",
-    "description": "Reinforce understanding of describing data distributions with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic115",
-    "title": "Represent data visually (dot plots, histograms) and summarize with mean, median, mode, range, IQR, and MAD",
-    "description": "Learn how to represent data visually using dot plots and histograms and summarize with measures of center and variability. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic116",
-    "title": "Practice Represent data visually Concepts",
-    "description": "Reinforce understanding of visual data representations and summary statistics with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic117",
-    "title": "Investigate simple probability models; compare predicted vs observed frequencies",
-    "description": "Learn how to investigate simple probability models and compare predicted versus observed frequencies. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic118",
-    "title": "Practice Probability models Concepts",
-    "description": "Reinforce understanding of simple probability models with guided practice with fun games and challenges and real-world problems. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic119",
-    "title": "Compute unit rates involving fractions (including different units, like speed)",
-    "description": "Learn how to compute unit rates involving fractions, including different contexts like speed. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic120",
-    "title": "Recognize and represent proportional relationships via graphs, tables, and equations",
-    "description": "Learn how to recognize and represent proportional relationships using graphs, tables, and equations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic121",
-    "title": "Add, subtract, multiply, and divide integers and rational numbers",
-    "description": "Learn how to add, subtract, multiply, and divide integers and rational numbers. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic122",
-    "title": "Use integer arithmetic in context; extend operations to rational numbers",
-    "description": "Learn how to use integer arithmetic in context and extend operations to rational numbers. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic123",
-    "title": "Solve word problems leading to linear equations of form p x + q = r and inequalities p x + q \u2265 r",
-    "description": "Learn how to solve word problems that lead to linear equations and inequalities. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic124",
-    "title": "Graph inequality solutions on number lines; express variable ranges",
-    "description": "Learn how to graph inequality solutions on number lines and express variable ranges. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic125",
-    "title": "Construct and describe geometric figures and measure angles (right, acute, obtuse)",
-    "description": "Learn how to construct and describe geometric figures and measure angles such as right, acute, and obtuse. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic126",
-    "title": "Solve volume problems involving right triangular prisms and right rectangular prisms",
-    "description": "Learn how to solve volume problems involving right triangular prisms and right rectangular prisms. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic127",
-    "title": "Construct and interpret box plots; compute interquartile range; identify outliers",
-    "description": "Learn how to construct and interpret box plots, compute interquartile range, and identify outliers. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic128",
-    "title": "Design and evaluate probability models",
-    "description": "Learn how to design and evaluate probability models. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic129",
-    "title": "Solve linear equations, including formulas like perimeters and areas",
-    "description": "Learn how to solve linear equations, including those involving formulas for perimeters and areas. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic130",
-    "title": "Solve pairs of linear equations (systems) via inspection, tables, or graphs",
-    "description": "Learn how to solve systems of linear equations using inspection, tables, or graphs. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic131",
-    "title": "Use variables in functions: understand y = m x + b; compare functions in multiple representations",
-    "description": "Learn how to use variables in functions, understand y = mx + b, and compare functions in multiple representations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic132",
-    "title": "Define functions as rules mapping inputs to outputs; understand their graphs as ordered pairs",
-    "description": "Learn how to define functions as rules mapping inputs to outputs and understand their graphs as ordered pairs. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic133",
-    "title": "Compare function properties across tables, graphs, or verbal descriptions",
-    "description": "Learn how to compare function properties across tables, graphs, or verbal descriptions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic134",
-    "title": "Define angles, circles, parallel & perpendicular lines, line segments",
-    "description": "Learn how to define and identify angles, circles, parallel and perpendicular lines, and line segments. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic135",
-    "title": "Represent transformations: translations, rotations, reflections; analyze symmetry",
-    "description": "Learn how to represent transformations such as translations, rotations, and reflections and analyze symmetry. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic136",
-    "title": "Explore slopes of parallel/perpendicular lines; apply in coordinate solutions",
-    "description": "Learn how to explore slopes of parallel and perpendicular lines and apply in coordinate solutions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic137",
-    "title": "Use coordinates to compute perimeters and areas; find segment points partitioned by ratio",
-    "description": "Learn how to use coordinates to compute perimeters and areas of shapes and find points that partition segments by a given ratio. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic138",
-    "title": "Solving linear equations and inequalities",
-    "description": "Learn how to solve linear equations and inequalities efficiently. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic139",
-    "title": "Simplifying algebraic expressions",
-    "description": "Learn how to simplify algebraic expressions by combining like terms and applying properties. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic140",
-    "title": "Evaluating expressions with variables",
-    "description": "Learn how to evaluate expressions with variables by substituting values. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic141",
-    "title": "Translating word problems into algebraic equations",
-    "description": "Learn how to translate word problems into algebraic equations to solve real-world problems. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic142",
-    "title": "Solving systems of equations (basic)",
-    "description": "Learn how to solve basic systems of equations using substitution, elimination, or graphs. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic143",
-    "title": "Operations with integers, fractions, and decimals",
-    "description": "Learn how to perform operations with integers, fractions, and decimals. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic144",
-    "title": "Factors, multiples, prime numbers",
-    "description": "Learn about factors, multiples, and prime numbers and how to identify them. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic145",
-    "title": "GCF & LCM",
-    "description": "Learn how to find greatest common factor (GCF) and least common multiple (LCM) of numbers. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic146",
-    "title": "Ratios, rates, proportions, and percent problems",
-    "description": "Learn how to solve problems involving ratios, rates, proportions, and percentages. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic147",
-    "title": "Exponents, roots, order of operations",
-    "description": "Learn about exponents, roots, and applying the correct order of operations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic148",
-    "title": "Absolute value",
-    "description": "Learn the concept of absolute value and how to apply it. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic149",
-    "title": "Mean, median, mode, range",
-    "description": "Learn how to calculate mean, median, mode, and range for data sets. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic150",
-    "title": "Reading and interpreting graphs, tables, and charts",
-    "description": "Learn how to read and interpret information from graphs, tables, and charts. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic151",
-    "title": "Simple probability & counting problems",
-    "description": "Learn basic probability concepts and solve simple counting problems. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic152",
-    "title": "Perimeter, area, and volume of basic shapes (triangles, rectangles, circles, prisms)",
-    "description": "Learn how to find the perimeter, area, and volume of basic shapes including triangles, rectangles, circles, and prisms. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic153",
-    "title": "Angles in polygons, parallel lines, and triangles",
-    "description": "Learn how to calculate angles in polygons, parallel lines, and triangles. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic154",
-    "title": "Coordinate geometry: distance between points, slope of a line",
-    "description": "Learn coordinate geometry concepts such as finding the distance between points and the slope of a line. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic155",
-    "title": "Transformations: reflections, rotations, translations",
-    "description": "Learn how to perform and analyze transformations like reflections, rotations, and translations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic156",
-    "title": "Scale drawings and similar figures",
-    "description": "Learn how to work with scale drawings and identify similar figures. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic157",
-    "title": "Multi-step problems combining arithmetic, algebra, and geometry",
-    "description": "Learn how to solve multi-step problems that combine arithmetic, algebra, and geometry concepts. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic158",
-    "title": "Work problems (rates, combined work)",
-    "description": "Learn how to solve work problems involving rates and combined work scenarios. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic159",
-    "title": "Motion problems (distance, rate, time)",
-    "description": "Learn how to solve motion problems using distance, rate, and time relationships. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic160",
-    "title": "Logical reasoning puzzles",
-    "description": "Learn strategies for solving logical reasoning puzzles. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic161",
-    "title": "Number patterns & sequences",
-    "description": "Learn how to recognize and generate number patterns and sequences. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic162",
-    "title": "Geometry: angles, circles, triangles, area, volume",
-    "description": "Learn key geometry concepts including angles, circles, triangles, area, and volume. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic163",
-    "title": "Trigonometry: sine, cosine, tangent (basic right-triangle trig)",
-    "description": "Learn basic right-triangle trigonometry concepts: sine, cosine, and tangent. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic164",
-    "title": "Coordinate geometry: distance, midpoint, slope of lines",
-    "description": "Learn coordinate geometry concepts such as distance, midpoint, and slope of lines. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic165",
-    "title": "Complex numbers (i) and basic operations",
-    "description": "Learn about complex numbers and how to perform basic operations with them. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic166",
-    "title": "Efficient mental math for no-calculator section",
-    "description": "Learn efficient mental math strategies for solving problems without a calculator. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic167",
-    "title": "Strategic calculator use for multi-step problems",
-    "description": "Learn how to use a calculator strategically for multi-step problems. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic168",
-    "title": "Linear equations and inequalities (single-variable and systems)",
-    "description": "Learn how to solve linear equations and inequalities for single-variable and systems. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic169",
-    "title": "Solving absolute value equations and inequalities",
-    "description": "Learn how to solve absolute value equations and inequalities. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic170",
-    "title": "Graphing linear equations & finding slope/intercept",
-    "description": "Learn how to graph linear equations and find slope and intercepts. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic171",
-    "title": "Linear word problems (rates, proportions, percentages)",
-    "description": "Learn how to solve linear word problems involving rates, proportions, and percentages. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic172",
-    "title": "Quadratic equations (factoring, completing the square, quadratic formula)",
-    "description": "Learn how to solve quadratic equations using factoring, completing the square, and the quadratic formula. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic173",
-    "title": "Exponential and radical equations",
-    "description": "Learn how to solve exponential and radical equations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic174",
-    "title": "Rational expressions and equations",
-    "description": "Learn how to simplify and solve rational expressions and equations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic175",
-    "title": "Function notation and transformations",
-    "description": "Learn how to use function notation and apply transformations. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic176",
-    "title": "Analyzing nonlinear functions (polynomial, exponential)",
-    "description": "Learn how to analyze nonlinear functions including polynomial and exponential functions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic177",
-    "title": "Ratios, rates, proportions, and unit conversions",
-    "description": "Learn how to solve problems involving ratios, rates, proportions, and unit conversions. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic178",
-    "title": "Percentages (increase, decrease, compound change)",
-    "description": "Learn how to calculate percentages for increase, decrease, and compound change scenarios. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic179",
-    "title": "Data interpretation from tables, charts, graphs",
-    "description": "Learn how to interpret data from tables, charts, and graphs. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic180",
-    "title": "Probability and statistics (mean, median, mode, standard deviation)",
-    "description": "Learn key probability and statistics concepts including mean, median, mode, and standard deviation. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
-  },
-  {
-    "id": "topic181",
-    "title": "Two-way tables and scatterplots",
-    "description": "Learn how to read and analyze two-way tables and scatterplots. Practice with examples and visual models. \ud83c\udf89 Ready to have fun while learning?"
+    "title": "Know when to use a calculator or mental math",
+    "description": "Know when to use a calculator or mental math \u2014 Learn and practice with examples, visuals, and real-world challenges. \ud83c\udf89 Ready to have fun while learning?"
   }
 ]

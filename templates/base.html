@@ -10,32 +10,25 @@
   <header>
     <h1><a href="/">Math Learning Platform</a></h1>
     <nav>
-  {% if user.is_authenticated %}
-    Hello, {{ user.username }} |
-    <a href="{% url 'practice:skillset_list' %}">Practice</a> |
-    <a href="{% url 'assessments:list' %}">Tests</a> |
-    <a href="{% url 'gamification-page' %}">My Garden</a> |
+      {% if user.is_authenticated %}
+        Hello, {{ user.username }} |
+        <a href="{% url 'practice:skillset_list' %}">Practice</a> |
+        <a href="{% url 'assessments:list' %}">Tests</a> |
+        <a href="{% url 'gamification-page' %}">My Garden</a> |
 
-    <form method="post" action="{% url 'logout' %}" style="display:inline;">
-      {% csrf_token %}
-      <button type="submit"
-        style="background:none;border:none;color:blue;cursor:pointer;font:inherit;padding:0;margin:0;">
-        Logout
-      </button>
-    </form>
-  {% else %}
-    <a href="{% url 'login' %}">Log in</a>
-  {% endif %}
-</nav>
-
-<<<<<<< Updated upstream
+        <form method="post" action="{% url 'logout' %}" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit"
+            style="background:none;border:none;color:blue;cursor:pointer;font:inherit;padding:0;margin:0;">
+            Logout
+          </button>
+        </form>
       {% else %}
         <a href="{% url 'login' %}">Log in</a> |
-        <a href="{%url 'register' %}"> Register</a>
+        <a href="{% url 'register' %}">Register</a>
       {% endif %}
     </nav>
-=======
->>>>>>> Stashed changes
+
     <hr>
   </header>
 

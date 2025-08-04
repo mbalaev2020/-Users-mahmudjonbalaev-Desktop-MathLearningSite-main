@@ -58,10 +58,13 @@ class Lesson(models.Model):
         return self.title
 
 
-class Topic(models.Model):
-    title = models.CharField(max_length=200)
-    description = models.TextField()
-    standard = models.ForeignKey(Standard, on_delete=models.CASCADE, related_name="topics")
 
-    def __str__(self):
-        return self.title
+class Topic(models.Model):
+    standard = models.ForeignKey(Standard, on_delete=models.CASCADE, related_name="topics")
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    source_id = models.CharField(max_length=20, blank=True, null=True)  # NEW
+
+    class Meta:
+        unique_together = ("standard", "title")
+

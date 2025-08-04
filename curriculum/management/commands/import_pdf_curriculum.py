@@ -85,7 +85,7 @@ class Command(BaseCommand):
                 continue
 
             #  Detect Standards (starts with *)
-            if current_grade and current_domain and line.startswith("*"):
+            if current_grade and current_domain and line.startswith("*") or line.startswith("-"):
                 skill_title = line.lstrip("* ").strip()
 
                 next_standard_num = current_domain.standards.count() + 1
