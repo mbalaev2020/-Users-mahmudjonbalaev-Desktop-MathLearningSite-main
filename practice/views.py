@@ -73,3 +73,18 @@ def question_view(request, skillset_id, q_id):
         "question": question,
         "progress": {"total": total, "correct": correct, "remaining": remaining}
     })
+
+def evaluate_skillset_readiness(user, skillset):
+    attempts = Attempt.objects.filter(user=user, question__skill_set = skillset)
+    total_questions = skillset.questions.count()
+
+    #simple logic:
+    correct_attempts = attempts.filter(is_correct=True).count()
+    total_attempts = attempts.count()
+    avg_attempts_per_question = total_attempts / total_questions if total_questions else 0
+
+    #rule: if avg attempts per question > 2 or accuract < 70%, recommend review
+    accuracy = correct_attempts / total_attempts if total_attempts else 0
+    if avg_attempts_per_question > 2 or accuracy < 0.7:
+        return "needs_review"
+    return "ready"

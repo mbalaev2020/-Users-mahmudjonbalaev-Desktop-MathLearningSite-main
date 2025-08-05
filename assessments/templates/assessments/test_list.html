@@ -1,13 +1,37 @@
-
 {% extends "base.html" %}
 {% block title %}Tests{% endblock %}
+
 {% block content %}
 <h2>Available Tests</h2>
+
 <ul>
   {% for t in tests %}
     <li>
-      {{ t.title }} ({{ t.get_test_type_display }})
+      <strong>{{ t.title }}</strong> ({{ t.get_test_type_display }})
       <a href="{% url 'assessments:start' t.id %}">Start / Resume →</a>
+
+      {% with progress=test_progress|index:forloop.counter0 %}
+        <ul>
+          {% for s in progress.skillsets %}
+            <li>
+              {% if s.completed %}
+                ✅ {{ s.title }}
+              {% else %}
+                ❌ {{ s.title }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <p>
+          Status:
+          {% if progress.unlocked %}
+            ✅ Test Unlocked
+          {% else %}
+            🔒 Locked – Complete all SkillSets
+          {% endif %}
+        </p>
+      {% endwith %}
     </li>
   {% empty %}
     <li>No tests available.</li>

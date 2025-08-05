@@ -6,7 +6,9 @@ from .views import (
     ProgressUpdateView,
     BadgeListView,
     GardenView,
-    CategoryListView
+    CategoryListView,
+    TestProgressView,
+    AllTestProgressAPIView
 )
 
 
@@ -22,6 +24,8 @@ urlpatterns = [
     path("progress/", ProgressUpdateView.as_view(), name="update-progress"),
     path("badges/", BadgeListView.as_view(), name="list-badges"),
     path("garden/", GardenView.as_view(), name="garden-data"),
-
     path("categories/", CategoryListView.as_view(), name="category-list"),
+    path("progress/test/<int:test_id>/", TestProgressView.as_view(), name="test-progress"),
+    path("progress/all/", AllTestProgressAPIView.as_view(), name="all-test-progress"),
+
 ]

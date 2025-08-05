@@ -3,10 +3,19 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from .models import Test, Question, UserTest, UserAnswer
 from practice.utils import has_mastered_standard
+from gamification.serializers import TestProgressSerializer
 
 @login_required
 def test_list(request):
-    return render(request, "assessments/test_list.html", {"tests": Test.objects.all()})
+    tests = Test.objects.all()
+    test_progress = [
+        TestProgressSerializer(test, context={'request': request}, many=True).data
+        for test in tests
+    ]
+    return render(request, "assessments/test_list.html", {
+        "tests": tests,
+        "test_progress": test_progress
+    })
 
 @login_required
 def test_start(request, test_id):
@@ -15,26 +24,28 @@ def test_start(request, test_id):
     # Check all related standards are mastered
     for standard in test.standards.all():
         if not has_mastered_standard(request.user, standard):
+            # Include progress info for visual tracker
+            progress = TestProgressSerializer(test, context={"request": request}).data
+
             return render(request, "assessments/locked.html", {
                 "test": test,
-                "standard": standard,  # just use the one that's blocked
-                "message": "This test is locked. You must complete all related skills first."
+                "standard": standard,  # Just show the first blocked one
+                "message": "This test is locked. You must complete all related skills first.",
+                "progress": progress  # Send progress to template
             })
 
     # Test already completed
     ut, _ = UserTest.objects.get_or_create(user=request.user, test=test)
-
     if ut.completed:
         return redirect("assessments:summary", ut.id)
 
     # Serve next unanswered question
     answered = ut.answers.values_list("question_id", flat=True)
     q = test.questions.exclude(id__in=answered).first()
-
     if q:
         return redirect("assessments:question", ut.id, q.id)
 
-    # Calculate score and finish
+    # If all answered, calculate score and finish test
     total = test.questions.count()
     if total == 0:
         return render(request, "assessments/locked.html", {

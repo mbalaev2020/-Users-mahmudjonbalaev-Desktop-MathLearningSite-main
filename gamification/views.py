@@ -7,6 +7,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
+from assessments.models import Test
 from practice.models import PracticeQuestion
 from curriculum.models import Domain
 from .models import (
@@ -21,12 +22,20 @@ from .serializers import (
     LoginStreakSerializer,
     BadgeSerializer,
     GardenStateSerializer,
-    CategorySerializer
+    CategorySerializer,
+    TestProgressSerializer
 )
 
 @login_required(login_url='/login/')
 def dashboard_page(request):
-    return render(request, "gamification/dashboard.html")
+    tests = Test.objects.all()
+    test_progress = [
+        TestProgressSerializer(test, context={"request": request}).data
+        for test in tests
+    ]
+    return render(request, "gamification/dashboard.html", {
+        "test_progress": test_progress
+    })
 
 
 class DashboardAPIView(APIView):
@@ -222,3 +231,21 @@ class CategoryListView(APIView):
             "data": serialized.data
         })
 
+class TestProgressView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, test_id):
+        test = Test.objects.get(pk = test_id)
+        serializer = TestProgressSerializer(test, context={'request': request})
+        return Response(serializer.data)
+
+class AllTestProgressAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self,request):
+        tests = Test.objects.all()
+        progress_data = [
+            TestProgressSerializer(test, context = {"request": request}).data
+            for test in tests
+        ]
+        return Response(progress_data)
