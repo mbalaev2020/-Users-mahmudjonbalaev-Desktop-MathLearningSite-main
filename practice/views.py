@@ -1,6 +1,15 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
+from django.http import JsonResponse, HttpResponse
+from django.template.loader import render_to_string
+
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
+
+from .utils import evaluate_skillset_readiness
 from .models import SkillSet, PracticeQuestion, Attempt
+
 
 def skillset_list(request):
     return render(request, "practice/skillset_list.html", {"skillsets": SkillSet.objects.all()})
@@ -9,7 +18,7 @@ def skillset_list(request):
 def practice_start(request, skillset_id):
     skillset = get_object_or_404(SkillSet, pk=skillset_id)
 
-    # ✅ Only count questions the user got right
+    # Only count questions the user got right
     correct = Attempt.objects.filter(
         user=request.user,
         question__skill_set=skillset,
@@ -74,17 +83,15 @@ def question_view(request, skillset_id, q_id):
         "progress": {"total": total, "correct": correct, "remaining": remaining}
     })
 
-def evaluate_skillset_readiness(user, skillset):
-    attempts = Attempt.objects.filter(user=user, question__skill_set = skillset)
-    total_questions = skillset.questions.count()
+class SkillSetReadinessView(APIView):
+    permission_classes = [IsAuthenticated]
 
-    #simple logic:
-    correct_attempts = attempts.filter(is_correct=True).count()
-    total_attempts = attempts.count()
-    avg_attempts_per_question = total_attempts / total_questions if total_questions else 0
+    def get(self, request, skillset_id):
+        skillset = SkillSet.objects.get(pk=skillset_id)
+        status = evaluate_skillset_readiness(request.user, skillset)
 
-    #rule: if avg attempts per question > 2 or accuract < 70%, recommend review
-    accuracy = correct_attempts / total_attempts if total_attempts else 0
-    if avg_attempts_per_question > 2 or accuracy < 0.7:
-        return "needs_review"
-    return "ready"
+        # Return HTML for HTMX
+        html = render_to_string("practice/partials/readiness_result.html", {
+            "status": status
+        })
+        return HttpResponse(html)

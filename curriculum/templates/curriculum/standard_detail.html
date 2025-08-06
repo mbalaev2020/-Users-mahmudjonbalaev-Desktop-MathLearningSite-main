@@ -36,16 +36,25 @@
 {% endif %}
 
 <h2>Practice Skill Sets</h2>
-{% if skillsets %}
-    <ul>
-    {% for s in skillsets %}
-        <li><a href = "{%  url 'practice:start' s.id %}">{{ s.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No practice available for this standard yet.</p>
-{% endif %}
+{% for s in skillsets %}
+    <li>
+        <a href="{% url 'practice:start' s.id %}">{{ s.title }}</a>
+
+        <!-- Live Readiness Button -->
+        <button
+            hx-get="{% url 'practice:skillset_readiness' s.id %}"
+            hx-target="#readiness-status-{{ s.id }}"
+            hx-swap="innerHTML"
+            style="margin-left: 10px;"
+        >
+            Check My Readiness
+        </button>
+
+        <!-- 📥 Target area for live result -->
+        <span id="readiness-status-{{ s.id }}" style="margin-left: 10px;"></span>
+    </li>
+{% endfor %}
+
 
 <h2>Assessment</h2>
 {% if test %}

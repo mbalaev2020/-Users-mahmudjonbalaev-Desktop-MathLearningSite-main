@@ -21,8 +21,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include('core.urls')),
     path("curriculum/", include("curriculum.urls")),
-    path("practice/", include("practice.urls")),
+    path("practice/", include(("practice.urls", "practice"), namespace="practice")),
     path("assessments/", include("assessments.urls")),
-
     path("gamification/", include("gamification.urls")),
 ]
