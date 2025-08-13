@@ -1,4 +1,5 @@
 from .models import SkillSet, UserSkillProgress, Attempt
+from assessments.models import Test
 
 def has_mastered_standard(user, standard):
     skillsets = SkillSet.objects.filter(related_standards=standard).distinct()
@@ -26,3 +27,20 @@ def evaluate_skillset_readiness(user, skillset):
     if avg_attempts_per_question > 2 or accuracy < 0.7:
         return "needs_review"
     return "ready"
+
+def evaluate_test_readiness(user, test):
+    for standard in test.standards.all():
+        if not has_mastered_standard(user, standard):
+            return "locked"
+
+    related_skillsets = SkillSet.objects.filter(
+        related_standards__in=test.standards.all()
+    ).distinct()
+
+    for skillset in related_skillsets:
+        readiness = evaluate_skillset_readiness(user, skillset)
+        if readiness != "ready":
+            return "needs_review"
+
+    return "ready"
+

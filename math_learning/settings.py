@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'practice',
     'assessments',
     'gamification',
+    'portals',
 
     'rest_framework',
 ]
@@ -126,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",   # ✅ this tells Django to look in /static
+    BASE_DIR / "static",   # this tells Django to look in /static
 ]
 
 

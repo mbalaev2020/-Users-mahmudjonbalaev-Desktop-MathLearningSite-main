@@ -8,10 +8,7 @@ from gamification.serializers import TestProgressSerializer
 @login_required
 def test_list(request):
     tests = Test.objects.all()
-    test_progress = [
-        TestProgressSerializer(test, context={'request': request}, many=True).data
-        for test in tests
-    ]
+    test_progress = [TestProgressSerializer(t, context={'request': request}).data for t in tests]
     return render(request, "assessments/test_list.html", {
         "tests": tests,
         "test_progress": test_progress

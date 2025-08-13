@@ -1,36 +1,56 @@
-# core/views.py
-from .forms import CustomUserCreationForm #Imporint custom form
 from django.shortcuts import render, redirect
-from django.contrib.auth import login
 from curriculum.models import Grade
+from .forms import StudentSignUpForm, TeacherSignUpForm, ParentSignUpForm
 
 def register_view(request):
-    if request.method == "POST":
-        form = CustomUserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect("home") #For now? Not too sure if we are making a dashboard
-    else:
-        form = CustomUserCreationForm()
-    return render(request, "core/register.html", {"form": form})
+    """
+      /register/ shows a tabbed chooser with all three forms.
+      Still supports ?role=teacher|parent|student deep links.
+      """
+    role = (request.GET.get("role") or "").lower()
+    if role == "teacher":
+        return redirect("register_teacher")
+    if role == "parent":
+        return redirect("register_parent")
+    if role == "student":
+        return redirect("register_student")
+
+    # Render the 3 forms on one page; each posts to its own endpoint.
+    ctx = {
+        "student_form": StudentSignUpForm(),
+        "teacher_form": TeacherSignUpForm(),
+        "parent_form": ParentSignUpForm(),
+    }
+    return render(request, "core/register_tabs.html", ctx)
 
 def home_view(request):
+    # Render the core-scoped template (file is at core/templates/core/home.html)
     return render(request, "core/home.html")
 
 def grades_view(request, grade_id):
-    # Map SHSAT & SAT to numeric levels
-    if grade_id.upper() == "SHSAT":
+    """Accepts '3'..'8', 'SHSAT'->9, 'SAT'->10; loads Grade and related content."""
+    s = str(grade_id).strip().upper()
+    if s == "SHSAT":
         level = 9
-    elif grade_id.upper() == "SAT":
+    elif s == "SAT":
         level = 10
     else:
-        level = int(grade_id)
+        try:
+            level = int(s)
+        except ValueError:
+            return render(request, "core/grade_detail.html", {
+                "page_title": "Not Found",
+                "description": "Invalid grade.",
+                "grade": None,
+            })
 
-    # Fetch Grade & prefetch Domains→Standards
-    grade = Grade.objects.prefetch_related("domains__standards").filter(level=level).first()
+    grade = (
+        Grade.objects
+        .prefetch_related("domains__standards")
+        .filter(level=level)
+        .first()
+    )
 
-    # Handle missing grade gracefully
     if not grade:
         return render(request, "core/grade_detail.html", {
             "page_title": "Not Found",
@@ -38,12 +58,8 @@ def grades_view(request, grade_id):
             "grade": None,
         })
 
-    # Title auto-converts 9→SHSAT, 10→SAT via Grade.__str__()
-    page_title = str(grade)
-    description = f"Explore domains and standards for {grade}."
-
     return render(request, "core/grade_detail.html", {
-        "grade": grade,  # we now pass the full grade object
-        "page_title": page_title,
-        "description": description,
+        "grade": grade,
+        "page_title": str(grade),
+        "description": f"Explore domains and standards for {grade}.",
     })

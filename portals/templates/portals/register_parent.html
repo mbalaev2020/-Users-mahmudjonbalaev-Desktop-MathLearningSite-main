@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Parent / Guardian Sign Up</h1>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
+
+  <p><label>{{ form.username.label }}</label><br>{{ form.username }} {{ form.username.errors }}</p>
+  <p><label>{{ form.email.label }}</label><br>{{ form.email }} {{ form.email.errors }}</p>
+
+  {% if form.relationship %}
+    <p><label>{{ form.relationship.label }}</label><br>{{ form.relationship }} {{ form.relationship.errors }}</p>
+  {% endif %}
+
+  <p><label>{{ form.password1.label }}</label><br>{{ form.password1 }} {{ form.password1.errors }}</p>
+  <p><label>{{ form.password2.label }}</label><br>{{ form.password2 }} {{ form.password2.errors }}</p>
+
+  <button type="submit" class="btn btn-primary">Create account</button>
+</form>
+
+<hr class="my-4">
+<p class="text-muted">Already have an account? <a href="{% url 'login' %}">Log in</a>.</p>
+{% endblock %}

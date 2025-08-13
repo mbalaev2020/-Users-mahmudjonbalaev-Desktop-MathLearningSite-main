@@ -8,7 +8,8 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
 from assessments.models import Test
-from practice.models import PracticeQuestion
+from practice.models import PracticeQuestion , SkillSet
+from practice.utils import evaluate_skillset_readiness, evaluate_test_readiness
 from curriculum.models import Domain
 from .models import (
     UserProgress,
@@ -28,15 +29,31 @@ from .serializers import (
 
 @login_required(login_url='/login/')
 def dashboard_page(request):
-    tests = Test.objects.all()
-    test_progress = [
-        TestProgressSerializer(test, context={"request": request}).data
-        for test in tests
-    ]
-    return render(request, "gamification/dashboard.html", {
-        "test_progress": test_progress
-    })
+    user = request.user
 
+    # Test progress + test readiness
+    tests = Test.objects.all()
+    test_progress = []
+    for test in tests:
+        progress = TestProgressSerializer(test, context={"request": request}).data
+        progress["readiness"] = evaluate_test_readiness(user, test)  # ✅ add readiness status
+        test_progress.append(progress)
+
+    # SkillSet readiness (unchanged)
+    skillsets = SkillSet.objects.all()
+    skillset_status = [
+        {
+            "id": s.id,
+            "title": s.title,
+            "readiness": evaluate_skillset_readiness(user, s)
+        }
+        for s in skillsets
+    ]
+
+    return render(request, "gamification/dashboard.html", {
+        "test_progress": test_progress,
+        "skillset_status": skillset_status
+    })
 
 class DashboardAPIView(APIView):
     permission_classes = [IsAuthenticated] #Only logged in users

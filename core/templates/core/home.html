@@ -1,44 +1,54 @@
 {% extends "base.html" %}
-
 {% block title %}Welcome to Math Learning{% endblock %}
-
 {% block content %}
-<!-- Hero Section -->
-<section class="hero" style="background: #f4f8ff; padding: 40px; text-align: center;">
-    <h1>Welcome to Math Learning</h1>
-    <p style="max-width: 600px; margin: 0 auto; font-size: 1.2rem;">
-        Choose your grade level to explore interactive lessons and practice exercises.
-    </p>
+
+<section class="hero" style="background:#f4f8ff;padding:40px;text-align:center;">
+  <h1>Welcome to Math Learning</h1>
+  <p style="max-width:600px;margin:0 auto;font-size:1.2rem;">
+    Choose your grade level to explore interactive lessons and practice exercises.
+  </p>
 </section>
 
-<!-- Grades Section -->
-<section class="grades-section" style="padding: 50px 20px;">
-    <h2 style="text-align: center; margin-bottom: 30px;">Select Your Grade or Exam</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+<section class="grades-section" style="padding:50px 20px;">
+  <h2 style="text-align:center;margin-bottom:30px;">Select Your Grade or Exam</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:1000px;margin:0 auto;">
 
-        <!-- Grades 3-8 -->
-        {% for g in "345678" %}
-        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>Grade {{ g }}</h3>
-            <p>Math lessons and practice for Grade {{ g }} students.</p>
-            <a href="{% url 'grade_detail' g %}" style="color: #0077cc;">Enter →</a>
-        </div>
-        {% endfor %}
+    {# Grades 3–8 #}
+    {% for g in "345678" %}
+      {% url 'core:grade_detail' g as url_ns %}
+      {% url 'grade_detail' g as url_plain %}
+      {% with fallback="/grade/"|add:g|add:"/" %}
+      {% with final=url_ns|default:url_plain|default:fallback %}
+      <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+        <h3>Grade {{ g }}</h3>
+        <p>Math lessons and practice for Grade {{ g }} students.</p>
+        <a href="{{ final }}" style="color:#0077cc;">Enter →</a>
+      </div>
+      {% endwith %}{% endwith %}
+    {% endfor %}
 
-        <!-- SHSAT -->
-        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>SHSAT Prep</h3>
-            <p>Specialized practice for NYC SHSAT exam math sections.</p>
-            <a href="{% url 'grade_detail' 'SHSAT' %}" style="color: #0077cc;">Enter →</a>
-        </div>
-
-        <!-- SAT -->
-        <div style="background: white; padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center;">
-            <h3>SAT Prep</h3>
-            <p>Focused lessons and practice to improve your SAT math score.</p>
-            <a href="{% url 'grade_detail' 'SAT' %}" style="color: #0077cc;">Enter →</a>
-        </div>
+    {# SHSAT #}
+    {% url 'core:grade_detail' 'SHSAT' as url_ns_shsat %}
+    {% url 'grade_detail' 'SHSAT' as url_plain_shsat %}
+    {% with shsat_url=url_ns_shsat|default:url_plain_shsat|default:"/grade/SHSAT/" %}
+    <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+      <h3>SHSAT Prep</h3>
+      <p>Specialized practice for NYC SHSAT exam math sections.</p>
+      <a href="{{ shsat_url }}" style="color:#0077cc;">Enter →</a>
     </div>
-</section>
+    {% endwith %}
 
+    {# SAT #}
+    {% url 'core:grade_detail' 'SAT' as url_ns_sat %}
+    {% url 'grade_detail' 'SAT' as url_plain_sat %}
+    {% with sat_url=url_ns_sat|default:url_plain_sat|default:"/grade/SAT/" %}
+    <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+      <h3>SAT Prep</h3>
+      <p>Focused lessons and practice to improve your SAT math score.</p>
+      <a href="{{ sat_url }}" style="color:#0077cc;">Enter →</a>
+    </div>
+    {% endwith %}
+
+  </div>
+</section>
 {% endblock %}

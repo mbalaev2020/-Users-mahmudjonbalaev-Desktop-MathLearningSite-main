@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Create an account{% endblock %}
+{% block content %}
+<h1>Create an account</h1>
+<p>Pick the type of account you want to create:</p>
+
+<style>
+.tabs { display:flex; gap:8px; margin:12px 0; }
+.tabs a {
+  padding:8px 12px; border:1px solid #ccc; border-bottom:none;
+  border-radius:8px 8px 0 0; text-decoration:none; color:#333; background:#f5f5f5;
+}
+.tabs a.active { background:#fff; font-weight:600; }
+.tabpanel { border:1px solid #ccc; border-radius:0 8px 8px 8px; padding:16px; }
+.hidden { display:none; }
+</style>
+
+<div class="tabs" role="tablist" aria-label="Registration tabs">
+  <a href="#tab-student" id="tab-student" role="tab" aria-controls="panel-student" aria-selected="true" class="active">Student</a>
+  <a href="#tab-teacher" id="tab-teacher" role="tab" aria-controls="panel-teacher" aria-selected="false">Teacher</a>
+  <a href="#tab-parent"  id="tab-parent"  role="tab" aria-controls="panel-parent"  aria-selected="false">Parent / Guardian</a>
+</div>
+
+{# ---------- Student ---------- #}
+{% url 'core:register_student' as rs_ns %}
+{% url 'register_student' as rs_plain %}
+<div class="tabpanel" id="panel-student" role="tabpanel" aria-labelledby="tab-student">
+  <form method="post" action="{{ rs_ns|default:rs_plain|default:'/register/student/' }}">
+    {% csrf_token %}
+    {{ student_form.as_p }}
+    <button type="submit">Create Student Account</button>
+  </form>
+</div>
+
+{# ---------- Teacher ---------- #}
+{% url 'core:register_teacher' as rt_ns %}
+{% url 'register_teacher' as rt_plain %}
+<div class="tabpanel hidden" id="panel-teacher" role="tabpanel" aria-labelledby="tab-teacher">
+  <form method="post" action="{{ rt_ns|default:rt_plain|default:'/register/teacher/' }}">
+    {% csrf_token %}
+    {{ teacher_form.as_p }}
+    <button type="submit">Create Teacher Account</button>
+  </form>
+</div>
+
+{# ---------- Parent ---------- #}
+{% url 'core:register_parent' as rp_ns %}
+{% url 'register_parent' as rp_plain %}
+<div class="tabpanel hidden" id="panel-parent" role="tabpanel" aria-labelledby="tab-parent">
+  <form method="post" action="{{ rp_ns|default:rp_plain|default:'/register/parent/' }}">
+    {% csrf_token %}
+    {{ parent_form.as_p }}
+    <button type="submit">Create Parent Account</button>
+  </form>
+</div>
+
+<script>
+(function(){
+  const tabs = document.querySelectorAll('.tabs a');
+  const panels = {
+    '#tab-student': document.getElementById('panel-student'),
+    '#tab-teacher': document.getElementById('panel-teacher'),
+    '#tab-parent':  document.getElementById('panel-parent')
+  };
+  function activate(id){
+    tabs.forEach(a=>{
+      const active = ('#'+a.id) === id;
+      a.classList.toggle('active', active);
+      a.setAttribute('aria-selected', active ? 'true' : 'false');
+      panels['#'+a.id].classList.toggle('hidden', !active);
+    });
+  }
+  tabs.forEach(a=>{
+    a.addEventListener('click', (e)=>{ e.preventDefault(); activate('#'+a.id); history.replaceState(null,'', a.getAttribute('href')); });
+  });
+  if (location.hash === '#tab-teacher') activate('#tab-teacher');
+  else if (location.hash === '#tab-parent') activate('#tab-parent');
+})();
+</script>
+
+<p style="margin-top:16px;">
+  Already have an account? <a href="{% url 'login' %}">Log in</a>.
+</p>
+{% endblock %}

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+
 <h1>🌱 Garden Dashboard</h1>
 
 <h2>Garden Health</h2>
@@ -15,12 +16,14 @@
 <h2>Badges</h2>
 <ul id="badge-list"></ul>
 
+<hr>
 <h2>📊 Test Progress Overview</h2>
 
 <ul>
   {% for progress in test_progress %}
     <li>
       <strong>{{ progress.title }}</strong>
+
       <ul>
         {% for s in progress.skillsets %}
           <li>
@@ -32,6 +35,7 @@
           </li>
         {% endfor %}
       </ul>
+
       <p>
         {% if progress.unlocked %}
           ✅ Test Unlocked
@@ -39,10 +43,36 @@
           🔒 Locked – Complete all SkillSets
         {% endif %}
       </p>
+
+      <p>
+        Readiness:
+        {% if progress.readiness == "ready" %}
+          ✅ Ready
+        {% elif progress.readiness == "needs_review" %}
+          ⚠️ Needs Review
+        {% else %}
+          🔒 Locked
+        {% endif %}
+      </p>
     </li>
   {% endfor %}
 </ul>
 
+<hr>
+<h2>📋 SkillSet Readiness Overview</h2>
+
+<ul>
+  {% for s in skillset_status %}
+    <li>
+      {{ s.title }} —
+      {% if s.readiness == "ready" %}
+        ✅ Ready
+      {% else %}
+        ⚠️ Needs Review
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -58,7 +88,7 @@
           document.getElementById("plant-list").appendChild(li);
         });
 
-        document.getElementById("streak-count").innerText = 
+        document.getElementById("streak-count").innerText =
           `Current: ${data.streak.current_streak}, Longest: ${data.streak.longest_streak}`;
 
         data.badges.forEach(b => {
@@ -69,4 +99,5 @@
       });
   });
 </script>
+
 {% endblock %}

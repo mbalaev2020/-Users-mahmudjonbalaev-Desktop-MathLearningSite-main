@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mb-3">Parent / Guardian Dashboard</h1>
+
+<nav class="mb-4" style="display:flex; gap:10px; flex-wrap:wrap;">
+  {# Robust link to the "link child" page: works with or without core namespace #}
+  {% url 'core:link_child' as link_child_ns %}
+  {% url 'link_child' as link_child_plain %}
+  <a href="{{ link_child_ns|default:link_child_plain|default:'/link-child/' }}" class="btn btn-primary">
+    Link a Child
+  </a>
+
+  {% if user and user.is_authenticated %}
+    <a href="{% url 'logout' %}" class="btn btn-outline-secondary">Log out</a>
+  {% endif %}
+</nav>
+
+<section class="mb-5">
+  <h2>Linked Children</h2>
+
+  {% if links %}
+    <div class="row g-3">
+      {% for link in links %}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                {{ link.student.username }}
+                <small class="text-muted d-block">
+                  Relationship: {{ link.relationship|default:"—" }}
+                </small>
+              </h5>
+
+              <ul class="list-unstyled small mb-3">
+                <li>Grade: {{ link.student.grade|default:"—" }}</li>
+                <li>
+                  Mastery:
+                  {% if link.student.mastery_percent %}{{ link.student.mastery_percent }}%{% else %}—{% endif %}
+                </li>
+                <li>Last Active: {{ link.student.last_login|date:"M j, Y" }}</li>
+              </ul>
+
+              {# Optional summaries if your view attaches _progress / _tests #}
+              {% if link._progress %}
+                <div class="mb-2"><strong>Recent Skill Progress</strong></div>
+                <ul class="small">
+                  {% for p in link._progress|slice:":5" %}
+                    <li>
+                      {{ p.skill_set.title }}
+                      — {% if p.mastered %}Mastered{% elif p.in_progress %}In Progress{% else %}Not Started{% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if link._tests %}
+                <div class="mb-2"><strong>Recent Tests</strong></div>
+                <ul class="small">
+                  {% for t in link._tests|slice:":5" %}
+                    <li>
+                      {{ t.test.title }}
+                      — {% if t.score %}{{ t.score }}%{% else %}Not scored{% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              <div class="mt-3">
+                <a href="#" class="btn btn-sm btn-outline-primary disabled" aria-disabled="true">
+                  View Detailed Progress
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted">
+      No children linked yet. Use “Link a Child” to get started.
+    </p>
+  {% endif %}
+</section>
+
+<section class="mb-5">
+  <h2>Tips</h2>
+  <ul>
+    <li>Encourage a regular practice routine (10–15 minutes/day).</li>
+    <li>Celebrate mastering a Skill Set before moving on.</li>
+    <li>Keep an eye on streaks to grow the student’s garden 🌱.</li>
+  </ul>
+</section>
+{% endblock %}

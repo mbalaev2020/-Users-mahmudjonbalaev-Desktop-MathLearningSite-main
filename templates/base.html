@@ -25,7 +25,9 @@
         </form>
       {% else %}
         <a href="{% url 'login' %}">Log in</a> |
-        <a href="{% url 'register' %}">Register</a>
+        {% url 'register' as register_url %}
+        <a href="{{ register_url|default:'/register/' }}">Register</a>
+
       {% endif %}
     </nav>
 
