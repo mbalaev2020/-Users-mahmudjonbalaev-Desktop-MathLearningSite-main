@@ -37,7 +37,7 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['slug', 'name', 'grade']
 
     def get_grade(self, obj):
-        return str(obj.grade)
+        return obj.grade.__str__()
 
 class SkillSetProgressSerializer(serializers.ModelSerializer):
     completed = serializers.SerializerMethodField()

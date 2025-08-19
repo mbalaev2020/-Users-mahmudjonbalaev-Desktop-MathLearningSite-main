@@ -49,6 +49,16 @@
     </div>
     {% endwith %}
 
+   {# --- Teacher Dashboard (teacher-only card) --- #}
+{% if show_teacher_card %}
+  <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+    <h3>Teacher Dashboard</h3>
+    <p>Manage lessons, upload practice questions, and create tests.</p>
+    <a href="{% url 'portals:teacher_dashboard' %}" style="color:#0077cc;">Enter →</a>
+  </div>
+{% endif %}
+
+
   </div>
 </section>
 {% endblock %}

@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.urls import include, path
 from gamification.views import dashboard_page
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # Core site (home, grades, register shim, per-role register, link-child)
@@ -23,3 +25,6 @@ urlpatterns = [
     # Admin
     path("admin/", admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

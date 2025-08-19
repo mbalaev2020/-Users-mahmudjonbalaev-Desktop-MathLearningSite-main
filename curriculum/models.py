@@ -46,16 +46,12 @@ class Standard(models.Model):
 
 
 class Lesson(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField(blank=True)               # or RichText in future
+    attachment = models.FileField(upload_to="lessons/", blank=True, null=True)
     standard = models.ForeignKey(Standard, on_delete=models.CASCADE, related_name="lessons")
-    title    = models.CharField(max_length=100)
-    content  = models.TextField()
-    order    = models.PositiveSmallIntegerField(default=1)
-
-    class Meta:
-        ordering = ["order"]
-
-    def __str__(self):
-        return self.title
+    created_at = models.DateTimeField(auto_now_add=True)
+    def __str__(self): return self.title
 
 
 

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Create Lesson</h1>
+{% if messages %}{% for m in messages %}<p>{{ m }}</p>{% endfor %}{% endif %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Save</button>
+</form>
+<p><a href="{% url 'portals:teacher_dashboard' %}">&larr; Back</a></p>
+{% endblock %}

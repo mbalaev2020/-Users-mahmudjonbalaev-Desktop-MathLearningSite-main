@@ -3,9 +3,9 @@ from django.conf import settings
 from curriculum.models import Standard
 
 class SkillSet(models.Model):
-    title = models.CharField(max_length=50)
-    description = models.TextField()
-    related_standards = models.ManyToManyField(Standard)
+    title = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
+    related_standards = models.ManyToManyField(Standard, blank=True)
 
     def __str__(self):
         return self.title
@@ -13,13 +13,13 @@ class SkillSet(models.Model):
 class PracticeQuestion(models.Model):
     skill_set = models.ForeignKey(SkillSet, on_delete=models.CASCADE, related_name="practice_questions")
     question_text = models.TextField()
-    choice_a = models.CharField(max_length=255)
-    choice_b = models.CharField(max_length=255)
-    choice_c = models.CharField(max_length=255)
-    choice_d = models.CharField(max_length=255)
-    ANSWER_CHOICES = [(x, x) for x in "ABCD"]
-    correct_answer = models.CharField(max_length=1, choices=ANSWER_CHOICES)
-    explanation_text = models.TextField(blank=True)
+    choice_a = models.CharField(max_length=255, blank=True)
+    choice_b = models.CharField(max_length=255, blank=True)
+    choice_c = models.CharField(max_length=255, blank=True)
+    choice_d = models.CharField(max_length=255, blank=True)
+    correct_answer = models.CharField(max_length=255)  # store the text or "A/B/C/D"
+    explanation = models.TextField(blank=True)
+    order = models.PositiveIntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.question_text[:50]
@@ -34,13 +34,9 @@ class Hint(models.Model):
 class Attempt(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     question = models.ForeignKey(PracticeQuestion, on_delete=models.CASCADE)
-    selected = models.CharField(max_length=1, choices=[(x, x) for x in "ABCD"])
-    is_correct = models.BooleanField()
-    timestamp = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ("user", "question")
-
+    selected = models.CharField(max_length=255)  # store "A/B/C/D" or text
+    is_correct = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
 #track user
 class UserSkillProgress(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)

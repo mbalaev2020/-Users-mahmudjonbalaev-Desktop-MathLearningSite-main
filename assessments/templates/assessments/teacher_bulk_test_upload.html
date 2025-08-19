@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Bulk Upload Test Questions (CSV)</h1>
+<p>Columns: <code>test_id</code> (optional), <code>prompt</code>, <code>answer</code>, <code>choices</code>, <code>explanation</code>, <code>order</code></p>
+{% if messages %}{% for m in messages %}<p>{{ m }}</p>{% endfor %}{% endif %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Upload</button>
+</form>
+<p><a href="{% url 'portals:teacher_dashboard' %}">&larr; Back</a></p>
+{% endblock %}

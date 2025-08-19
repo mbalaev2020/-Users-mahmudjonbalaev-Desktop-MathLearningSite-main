@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Upload Practice Questions</h1>
+
+{% if messages %}<ul>{% for m in messages %}<li>{{ m }}</li>{% endfor %}</ul>{% endif %}
+
+<h2>CSV Upload (best for 100+)</h2>
+<p>Columns: <code>skill_set</code> (optional), <code>prompt</code>, <code>answer</code>, <code>choices</code> ("A||B||C"), <code>explanation</code>, <code>order</code></p>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ csv_form.as_p }}
+  <button type="submit" name="submit_csv">Upload CSV</button>
+</form>
+
+<hr>
+
+<h2>PDF Upload (uses importer)</h2>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ pdf_form.as_p }}
+  <button type="submit" name="submit_pdf">Import PDF</button>
+</form>
+
+<p><a href="{% url 'portals:teacher_dashboard' %}">&larr; Back</a></p>
+{% endblock %}

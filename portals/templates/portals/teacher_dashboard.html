@@ -2,9 +2,11 @@
 {% block content %}
 <h1 class="mb-3">Teacher Dashboard</h1>
 
-<nav class="mb-4">
-  <a href="#" class="btn btn-primary disabled" aria-disabled="true">Create Assignment (coming soon)</a>
-  <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Invite Students (coming soon)</a>
+<nav class="mb-4 d-flex gap-2 flex-wrap">
+  <a href="{% url 'practice:teacher_upload_practice' %}" class="btn btn-primary">Upload Practice Questions</a>
+  <a href="{% url 'assessments:teacher_create_test' %}" class="btn btn-outline-secondary">Create a Test</a>
+  <a href="{% url 'assessments:teacher_bulk_test_upload' %}" class="btn btn-outline-secondary">Bulk Upload Test Questions (CSV)</a>
+  <a href="{% url 'curriculum:teacher_create_lesson' %}" class="btn btn-outline-secondary">Create a Lesson</a>
 </nav>
 
 <section class="mb-5">
@@ -15,17 +17,19 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading-{{ c.id }}">
             <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-{{ c.id }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                    data-bs-toggle="collapse" data-bs-target="#collapse-{{ c.id }}"
+                    aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
                     aria-controls="collapse-{{ c.id }}">
-              {{ c.name }} — {{ c.students.count }} student{% if c.students.count != 1 %}s{% endif %}
+              {{ c.name }} — {{ c.students|length }} student{% if c.students|length != 1 %}s{% endif %}
             </button>
           </h2>
-          <div id="collapse-{{ c.id }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+          <div id="collapse-{{ c.id }}"
+               class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
                aria-labelledby="heading-{{ c.id }}" data-bs-parent="#classesAccordion">
             <div class="accordion-body">
-              {% if c.students.all %}
+              {% if c.students %}
                 <div class="table-responsive">
-                  <table class="table table-striped align-middle">
+                  <table class="table table-striped align-middle mb-0">
                     <thead>
                       <tr>
                         <th>Student</th>
@@ -36,24 +40,26 @@
                       </tr>
                     </thead>
                     <tbody>
-                      {% for s in c.students.all %}
+                      {% for s in c.students %}
                         <tr>
                           <td>{{ s.username }}</td>
                           <td>{{ s.grade|default:"—" }}</td>
                           <td>{{ s.mastery_percent|default:"—" }}</td>
                           <td>{{ s.last_login|date:"M j, Y" }}</td>
                           <td>
-                            <a href="#" class="btn btn-sm btn-outline-primary disabled" aria-disabled="true">View Progress</a>
+                            <a class="btn btn-sm btn-outline-primary disabled" aria-disabled="true">View Progress</a>
                           </td>
                         </tr>
                       {% empty %}
-                        <tr><td colspan="5" class="text-muted">No students yet.</td></tr>
+                        <tr>
+                          <td colspan="5" class="text-muted">No students yet.</td>
+                        </tr>
                       {% endfor %}
                     </tbody>
                   </table>
                 </div>
               {% else %}
-                <p class="text-muted">No students enrolled in this class yet.</p>
+                <p class="text-muted mb-0">No students enrolled in this class yet.</p>
               {% endif %}
             </div>
           </div>
@@ -72,7 +78,9 @@
       <div class="card h-100">
         <div class="card-body">
           <div class="h5">Average Mastery</div>
-          <div class="display-6">{{ avg_mastery|default:"—" }}{% if avg_mastery %}%{% endif %}</div>
+          <div class="display-6">
+            {{ avg_mastery|default:"—" }}{% if avg_mastery %}%{% endif %}
+          </div>
         </div>
       </div>
     </div>
