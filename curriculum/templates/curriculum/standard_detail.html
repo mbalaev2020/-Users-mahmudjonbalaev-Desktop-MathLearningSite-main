@@ -70,7 +70,7 @@
 
 <!-- Now properly outside the Assessment block -->
 <hr>
-<a href="{% url 'curriculum:standard_list' standard.domain.grade.level standard.domain.slug %}">
+<a href="{% url 'core:grade_detail' standard.domain.grade.level %}#{{ standard.domain.slug }}">
   ← Back to Standards
 </a>
 

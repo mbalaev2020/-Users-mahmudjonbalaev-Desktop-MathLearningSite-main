@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% block title %}Math Learning{% endblock %}</title>
+  <title>{% block title %}Fun Learning Math{% endblock %}</title>
   <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
   <header>
-    <h1><a href="/">Math Learning Platform</a></h1>
+    <h1><a href="/">Fun Learning Math </a></h1>
     <nav>
       {% if user.is_authenticated %}
         Hello, {{ user.username }} |
@@ -38,7 +38,7 @@
     {% block content %}{% endblock %}
   </main>
 
-  <footer><hr>&copy; 2025 Math Learning</footer>
+  <footer><hr>&copy; 2025 Fun Learning Math</footer>
 
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
 
