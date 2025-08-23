@@ -18,6 +18,9 @@ class Test(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def is_unlocked_for(self, user):
+        return True
 
 class Question(models.Model):
     test = models.ForeignKey(Test, on_delete=models.CASCADE, related_name="questions")

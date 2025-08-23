@@ -62,5 +62,7 @@ class TestProgressSerializer(serializers.ModelSerializer):
         return obj.is_unlocked_for(self.context['request'].user)
 
     def get_skillsets(self, obj):
-        skillsets = SkillSet.objects.filter(standard__in = obj.standards.all())
+        skillsets = SkillSet.objects.filter(related_standards__in = obj.standards.all())
         return SkillSetProgressSerializer(skillsets, many=True, context = self.context).data
+    def is_unlocked_for(self, user):
+        return True

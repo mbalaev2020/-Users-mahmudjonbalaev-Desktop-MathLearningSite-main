@@ -10,8 +10,7 @@
       <strong>{{ t.title }}</strong> ({{ t.get_test_type_display }})
       <a href="{% url 'assessments:start' t.id %}">Start / Resume →</a>
 
-      {% with progress=test_progress|index:forloop.counter0 %}
-        <ul>
+      {% with progress=test_progress.forloop.counter0 %}         <ul>
           {% for s in progress.skillsets %}
             <li>
               {% if s.completed %}

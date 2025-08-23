@@ -25,15 +25,14 @@
 <hr>
 
 <h2>Lessons</h2>
-{% if lessons %}
-    <ul>
-    {% for lesson in lessons %}
-        <li>{{ lesson.title }}</li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No lessons available for this standard yet.</p>
-{% endif %}
+{% for lesson in lessons %}
+    <li>
+        <a href="{% url 'curriculum:lesson_detail' grade_level=standard.domain.grade.level domain_slug=standard.domain.slug pk=lesson.id %}" 
+           style="color: blue; text-decoration: underline;">
+            📖 {{ lesson.title }}
+        </a>
+    </li>
+{% endfor %}
 
 <h2>Practice Skill Sets</h2>
 {% for s in skillsets %}
