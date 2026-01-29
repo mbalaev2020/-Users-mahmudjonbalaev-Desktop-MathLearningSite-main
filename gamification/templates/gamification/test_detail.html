@@ -1,0 +1,21 @@
+<h3>Progress to Unlock Test</h3>
+<ul>
+  {% for skillset in progress.skillsets %}
+    <li>
+      {% if skillset.completed %}
+        ✅ {{ skillset.title }}
+      {% else %}
+        ❌ {{ skillset.title }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<p>
+  Test Status:
+  {% if progress.unlocked %}
+    ✅ Unlocked
+  {% else %}
+    🔒 Locked – complete all SkillSets first
+  {% endif %}
+</p>

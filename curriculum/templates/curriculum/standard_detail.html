@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ standard.description }}</h1>
+<p><strong>Domain:</strong> {{ standard.domain.name }}</p>
+<p><strong>Grade:</strong> {{ standard.domain.grade.level }}</p>
+
+<hr>
+
+<h2>Topics</h2>
+{% if standard.topics.all %}
+    <ul>
+    {% for topic in standard.topics.all %}
+    <li>
+        <strong>{{ topic.title }}</strong><br>
+        <p>{{ topic.description }}</p>
+    </li>
+    {% endfor %}
+    </ul>
+
+{% else %}
+    <p>No topics yet for this standard</p>
+{% endif %}
+
+<hr>
+
+<h2>Lessons</h2>
+{% for lesson in lessons %}
+    <li>
+        <a href="{% url 'curriculum:lesson_detail' grade_level=standard.domain.grade.level domain_slug=standard.domain.slug pk=lesson.id %}" 
+           style="color: blue; text-decoration: underline;">
+            📖 {{ lesson.title }}
+        </a>
+    </li>
+{% endfor %}
+
+<h2>Practice Skill Sets</h2>
+{% for s in skillsets %}
+    <li>
+        <a href="{% url 'practice:start' s.id %}">{{ s.title }}</a>
+
+        <!-- Live Readiness Button -->
+        <button
+            hx-get="{% url 'practice:skillset_readiness' s.id %}"
+            hx-target="#readiness-status-{{ s.id }}"
+            hx-swap="innerHTML"
+            style="margin-left: 10px;"
+        >
+            Check My Readiness
+        </button>
+
+        <!-- 📥 Target area for live result -->
+        <span id="readiness-status-{{ s.id }}" style="margin-left: 10px;"></span>
+    </li>
+{% endfor %}
+
+
+<h2>Assessment</h2>
+{% if test %}
+    {% if test_unlocked %}
+        <p><strong>{{ test.title }}</strong></p>
+        <a class="btn btn-primary" href="{% url 'assessments:start' test.id %}">Take Test</a>
+    {% else %}
+        <p>📌 Complete all practice skill sets to unlock the test.</p>
+    {% endif %}
+{% else %}
+    <p>No test available for this standard.</p>
+{% endif %}
+
+<!-- Now properly outside the Assessment block -->
+<hr>
+<a href="{% url 'core:grade_detail' standard.domain.grade.level %}#{{ standard.domain.slug }}">
+  ← Back to Standards
+</a>
+
+{% endblock %}

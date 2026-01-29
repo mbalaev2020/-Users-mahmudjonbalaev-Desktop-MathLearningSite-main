@@ -1,0 +1,161 @@
+﻿Grade 3
+1. Multiplication & Division
+* Practice multiplying and dividing numbers up to 100
+* Learn tricks to help (like flip-order or groups)
+* Learn facts like 5×7 or 25÷5
+* Memorize simple facts like 6×8 = 48
+* Solve word problems using +, −, ×, ÷
+2. Place Value & Number Sense
+* Understand place value (like 3,482 = 3,000 + 400 + 80 + 2)
+* Round numbers to the nearest 10 or 100
+* Add and subtract up to 1,000
+* Multiply by 10, 20, etc.
+* Learn about thousands, hundreds, tens, and ones
+3. Fractions
+* Understand fractions like ½ or ¾
+* Show fractions on number lines
+* See which fractions are the same (½ = 2/4)
+* Compare fractions (is ¾ bigger than ⅔?)
+4. Measurement & Data
+* Tell time to the minute; figure out how much time passed
+* Measure weight and liquid (grams, liters)
+* Make bar graphs and pictographs
+* Use line plots with fractions
+* Learn about area and perimeter
+* Find area using squares or multiplication
+* Solve real-world problems with area and perimeter
+5. Shapes & Geometry
+* Name and describe shapes like squares and triangles
+* Sort shapes by their sides and corners
+
+Grade 4
+1. Operations & Patterns
+* Solve tricky word problems using all 4 operations
+* Work with unknown numbers (like 3 × __ = 12)
+* Understand factors and multiples (like 5 is a factor of 20)
+* Find patterns in numbers and shapes
+2. Big Numbers & Place Value
+* Understand numbers up to 1 million
+* Multiply and divide by 10, 100, etc.
+* Write numbers in different ways
+* Round any number
+* Do big addition, subtraction, multiplication, and division problems
+3. Fractions & Decimals
+* Use pictures to understand fractions
+* Compare and add fractions (even with different bottoms)
+* Add decimals like 0.4 + 0.6 = 1.0
+4. Measurement & Data
+* Change between units (like cm to m or minutes to hours)
+* Solve real-world problems with time, weight, and money
+* Use line plots with fractions
+* Measure angles with a protractor
+5. Geometry
+* Know parts of shapes: points, lines, angles
+* Identify right, acute, and obtuse angles
+* Sort shapes based on sides and angles
+
+Grade 5
+1. Expressions & Patterns
+* Write math expressions and explain them
+* Find and describe number patterns
+2. Fractions
+* Add and subtract fractions with different bottoms
+* Multiply fractions
+* Divide simple fractions (like ½ ÷ 3 or 4 ÷ ½)
+3. Decimals
+* Work with decimals to the thousandths
+* Compare, round, and calculate with decimals
+4. Measurement & Data
+* Convert between units (cm, m, g, kg)
+* Use line plots and find volume of boxes
+5. Geometry
+* Graph points on a grid
+* Sort shapes by sides and angles
+
+Grade 6
+1. Ratios & Percents
+* Understand and use ratios (like 3:1)
+* Solve problems with rates and unit price
+* Use percent (like 20% of 50)
+* Change units using ratios
+2. Numbers
+* Divide fractions by fractions
+* Do all operations with big numbers and decimals
+* Understand positive and negative numbers
+* Graph numbers on a number line
+3. Expressions & Equations
+* Use variables (like x)
+* Know math rules like order of operations
+* Solve equations like x + 5 = 12
+4. Geometry
+* Find area and volume of shapes
+* Use grids to draw shapes and find distances
+* Unfold 3D shapes into nets
+5. Statistics
+* Ask good data questions
+* Make and read dot plots and histograms
+* Understand averages and spreads
+* Learn simple probability
+
+Grade 7
+1. Proportional Relationships
+* Solve problems with unit rates (like 3 miles in ½ hour)
+* Use tables and graphs to show relationships
+2. Numbers
+* Work with all rational numbers (positive and negative)
+* Use math with real-world contexts
+3. Equations & Inequalities
+* Solve word problems that lead to equations
+* Graph inequalities on number lines
+4. Geometry
+* Build and measure shapes
+* Solve volume problems
+5. Data & Probability
+* Use box plots and find outliers
+* Build simple models for probability
+
+Grade 8
+1. Equations & Systems
+* Solve all kinds of linear equations
+* Solve systems of two equations
+* Understand functions like y = mx + b
+2. Functions
+* Know how inputs go to outputs
+* Use tables, graphs, and rules to describe functions
+3. Geometry
+* Learn about angles, lines, circles
+* Transform shapes (move, flip, turn)
+* Use coordinates to find perimeter and area
+
+SHSAT
+1. Basic Math
+* Do all operations with whole numbers, fractions, and decimals
+* Use GCF and LCM
+* Solve problems with ratios and percentages
+2. Algebra
+* Solve equations and simplify expressions
+* Translate word problems to equations
+3. Geometry
+* Find area, perimeter, and volume
+* Work with angles and graphs
+4. Word Problems
+* Solve tricky real-world problems (speed, time, logic)
+5. Data
+* Read charts and graphs
+* Understand averages and basic probability
+
+SAT
+1. Algebra
+* Solve and graph linear equations
+* Work with systems and word problems
+2. Data Analysis
+* Use ratios, percentages, and units
+* Read data from charts and graphs
+3. Advanced Math
+* Solve quadratic and exponential equations
+* Understand functions and graphs
+4. Geometry & Trig
+* Use formulas for area, volume, and angles
+* Basic trigonometry with right triangles
+5. Calculator Skills
+* Know when to use a calculator or mental math

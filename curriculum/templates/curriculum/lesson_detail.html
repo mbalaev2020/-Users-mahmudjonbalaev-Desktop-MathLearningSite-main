@@ -1,0 +1,19 @@
+11:25
+{% extends "base.html" %}
+{% block title %}{{ lesson.title }}{% endblock %}
+{% block content %}
+<h2>{{ lesson.title }}</h2>
+<p><strong>Standard:</strong> {{ lesson.standard.code }}</p>
+<div>{{ lesson.content|safe }}</div>
+
+{% if lesson.standard.skillset_set.exists %}
+  <h3>Practice This Skill</h3>
+  <ul>
+    {% for ss in lesson.standard.skillset_set.all %}
+      <li><a href="{% url 'practice:start' ss.id %}">{{ ss.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
+<a href="{% url 'curriculum:standard_detail' grade_level=lesson.standard.domain.grade.level domain_slug=lesson.standard.domain.slug pk=lesson.standard.id %}">  ← Back to standards
+</a>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Practice – {{ skillset.title }}{% endblock %}
+{% block content %}
+  <h3>{{ skillset.title }}</h3>
+
+    {% if progress %}
+  <div style="margin-bottom: 1em;">
+    <strong>Progress:</strong> {{ progress.correct }} of {{ progress.total }} correct.
+    <br>
+    {% if progress.remaining > 0 %}
+      {{ progress.remaining }} question{{ progress.remaining|pluralize }} left to master this Skill Set.
+    {% else %}
+      Skill Set complete!
+    {% endif %}
+  </div>
+{% endif %}
+
+
+  <form method="post">
+    {% csrf_token %}
+    <p><strong>{{ question.question_text }}</strong></p>
+
+  {# loop through choices #}
+    {% for lbl in "ABCD" %}
+      <label>
+        <input type="radio" name="choice" value="{{ lbl }}"
+          {% if show_result and selected == lbl %}checked{% endif %}>
+        {{ lbl }}.
+        {% if lbl == "A" %}{{ question.choice_a }}{% endif %}
+        {% if lbl == "B" %}{{ question.choice_b }}{% endif %}
+        {% if lbl == "C" %}{{ question.choice_c }}{% endif %}
+        {% if lbl == "D" %}{{ question.choice_d }}{% endif %}
+      </label>
+      <br>
+    {% endfor %}
+
+    {% if show_result %}
+      {% if is_correct %}
+        <p style="color:green;">Correct! 🎉</p>
+      {% else %}
+        <p style="color:red;">Incorrect.</p>
+        {% if question.hints.all %}
+          <em>Hint:</em> {{ question.hints.first.text }}
+        {% endif %}
+        <p>Answer: <strong>{{ question.correct_answer }}</strong></p>
+      {% endif %}
+      <button formaction="{% url 'practice:start' skillset.id %}" type="submit">Next →</button>
+    {% else %}
+      <button type="submit">Submit</button>
+    {% endif %}
+  </form>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Fun Learning Math{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1><a href="/">Fun Learning Math </a></h1>
+    <nav>
+      {% if user.is_authenticated %}
+        Hello, {{ user.username }} |
+        <a href="{% url 'practice:skillset_list' %}">Practice</a> |
+        <a href="{% url 'assessments:list' %}">Tests</a> |
+        <a href="{% url 'gamification-page' %}">My Garden</a> |
+
+        <form method="post" action="{% url 'logout' %}" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit"
+            style="background:none;border:none;color:blue;cursor:pointer;font:inherit;padding:0;margin:0;">
+            Logout
+          </button>
+        </form>
+      {% else %}
+        <a href="{% url 'login' %}">Log in</a> |
+        {% url 'register' as register_url %}
+        <a href="{{ register_url|default:'/register/' }}">Register</a>
+
+      {% endif %}
+    </nav>
+
+    <hr>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer><hr>&copy; 2025 Fun Learning Math</footer>
+
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+{% block title %}Choose Grade{% endblock %}
+{% block content %}
+<h2>Select Your Grade</h2>
+<ul>
+  {% for g in grades %}
+    <li><a href="{% url 'curriculum:domain_list' g.level %}">{{ g }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

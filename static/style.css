@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header, footer {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+.math-lesson, .math-facts-lesson {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trick-card, .fact-card {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.hands-on, .trick {
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+.example {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+mark {
+    background: #fff176; 
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.facts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.facts-table th {
+    background: #4CAF50;
+    color: white;
+}
+
+.facts-table td, .facts-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 15px 0; 
+}
+
+.fact-card {
+  text-align: center;
+}
+
+.fact-problem {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.fact-answer {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.fact-mnemonic {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}

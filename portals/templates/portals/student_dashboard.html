@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Student Dashboard -->
+<h1 class="mb-3">Student Dashboard</h1>
+
+<!-- Quick Actions -->
+<nav class="mb-4">
+  <a href="{% url 'practice:skillset_list' %}" class="btn btn-primary">Practice Skill Sets</a>
+  {% if user and user.is_authenticated %}
+    <a href="{% url 'logout' %}" class="btn btn-outline-secondary">Log out</a>
+  {% endif %}
+</nav>
+
+<!-- Progress -->
+<section class="mb-5">
+  <h2>My Skill Progress</h2>
+  {% if progress %}
+    <div class="table-responsive">
+      <table class="table table-striped align-middle">
+        <thead>
+          <tr>
+            <th>Skill Set</th>
+            <th>Status</th>
+            <th>Accuracy</th>
+            <th>Last Attempt</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in progress %}
+            <tr>
+              <td>{{ p.skill_set.title }}</td>
+              <td>
+                {% if p.mastered %}✅ Mastered
+                {% elif p.in_progress %}🟡 In Progress
+                {% else %}🔴 Not Started
+                {% endif %}
+              </td>
+              <td>{{ p.accuracy|default:"—" }}{% if p.accuracy %}%{% endif %}</td>
+              <td>{{ p.updated_at|date:"M j, Y" }}</td>
+              <td>
+                <a href="{% url 'practice:skillset_start' p.skill_set.id %}" class="btn btn-sm btn-primary">
+                  Continue
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <p class="text-muted">No progress yet — start with your first Skill Set!</p>
+  {% endif %}
+</section>
+
+<!-- Tests -->
+<section class="mb-5">
+  <h2>My Tests</h2>
+  {% if tests %}
+    <div class="row g-3">
+      {% for t in tests %}
+        {% with test_obj=t.test|default:t %}
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">{{ test_obj.title }}</h5>
+                <p class="card-text">
+                  {% if t.status %}
+                    Status: <strong>{{ t.status }}</strong>
+                  {% elif t.unlocked is not None %}
+                    Status: <strong>{% if t.unlocked %}Unlocked{% else %}Locked{% endif %}</strong>
+                  {% else %}
+                    Status: <strong>—</strong>
+                  {% endif %}
+                  <br>
+                  {% if t.score %}Last Score: {{ t.score }}%{% endif %}
+                </p>
+                {% if t.status == "locked" or t.unlocked == False %}
+                  <button class="btn btn-secondary" disabled>Locked</button>
+                {% else %}
+                  <a href="{% url 'assessments:test_start' test_obj.id %}" class="btn btn-primary">Start / Continue</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endwith %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted">No tests assigned yet.</p>
+  {% endif %}
+</section>
+{% endblock %}

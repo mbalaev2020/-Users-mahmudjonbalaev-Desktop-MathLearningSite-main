@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}{{ page_title }}{% endblock %}
+{% block content %}
+<section style="padding:40px;text-align:center;">
+  <h1>{{ page_title }}</h1>
+  <p>{{ description }}</p>
+</section>
+
+{% if grade %}
+  <section style="max-width:900px;margin:0 auto;padding:20px;">
+    {% for domain in grade.domains.all %}
+      <div style="border:1px solid #ddd;padding:15px;margin-bottom:20px;border-radius:8px;">
+        <h2>{{ domain.name }}</h2>
+        {% if domain.standards.all %}
+          <ul>
+            {% for standard in domain.standards.all %}
+              <li>
+                <a href="{% url 'curriculum:standard_detail' grade.level domain.slug standard.id %}">
+                  <strong>{{ standard.code }}</strong>: {{ standard.description }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No standards yet for this domain.</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+{% else %}
+  <p style="text-align:center;">No grade data found.</p>
+{% endif %}
+
+{% url 'core:home' as home_ns %}
+{% url 'home' as home_plain %}
+<p style="text-align:center;margin-top:20px;">
+  <a href="{{ home_ns|default:home_plain|default:'/' }}"
+     style="padding:10px 16px;background:#0077cc;color:#fff;text-decoration:none;border-radius:6px;">
+    ← Back to Home
+  </a>
+</p>
+
+{% endblock %}

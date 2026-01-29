@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>✅ Skill Set Completed!</h2>
+  <p>You’ve answered all questions in <strong>{{ skillset.title }}</strong> correctly.</p>
+
+  <a href="{% url 'home' %}">Return to Dashboard</a> |
+  <a href="{% url 'practice:skillset_list' %}">Back to Practice</a>
+{% endblock %}
+

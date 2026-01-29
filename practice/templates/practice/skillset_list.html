@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Skill Sets{% endblock %}
+{% block content %}
+<h2>Practice Skill Sets</h2>
+<ul>
+  {% for ss in skillsets %}
+    <li>
+      <a href="{% url 'practice:start' ss.id %}">
+        {{ ss.title }} ({{ ss.practice_questions.count }} questions)
+      </a>
+    </li>
+  {% empty %}
+    <li>No skill sets available.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
