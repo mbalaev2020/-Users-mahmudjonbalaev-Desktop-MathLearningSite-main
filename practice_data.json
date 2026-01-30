@@ -1,0 +1,576 @@
+[
+{
+  "model": "practice.skillset",
+  "pk": 1,
+  "fields": {
+    "title": "Multiplication",
+    "description": "Auto-imported from multiplication_grade3.pdf",
+    "related_standards": [
+      1
+    ]
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 1,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 4 x 3?",
+    "choice_a": "16",
+    "choice_b": "4",
+    "choice_c": "12",
+    "choice_d": "20",
+    "correct_answer": "C",
+    "explanation": "Correct answer is 4 x 3 = 12",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 2,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 7 x 2?",
+    "choice_a": "10",
+    "choice_b": "5",
+    "choice_c": "14",
+    "choice_d": "20",
+    "correct_answer": "C",
+    "explanation": "Correct answer is 7 x 2 = 14",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 3,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 5 x 6?",
+    "choice_a": "33",
+    "choice_b": "27",
+    "choice_c": "26",
+    "choice_d": "30",
+    "correct_answer": "D",
+    "explanation": "Correct answer is 5 x 6 = 30",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 4,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 9 x 3?",
+    "choice_a": "17",
+    "choice_b": "27",
+    "choice_c": "32",
+    "choice_d": "24",
+    "correct_answer": "B",
+    "explanation": "Correct answer is 9 x 3 = 27",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 5,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 8 x 4?",
+    "choice_a": "36",
+    "choice_b": "22",
+    "choice_c": "27",
+    "choice_d": "32",
+    "correct_answer": "D",
+    "explanation": "Correct answer is 8 x 4 = 32",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 6,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 6 x 7?",
+    "choice_a": "42",
+    "choice_b": "50",
+    "choice_c": "51",
+    "choice_d": "49",
+    "correct_answer": "A",
+    "explanation": "Correct answer is 6 x 7 = 42",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 7,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 3 x 8?",
+    "choice_a": "23",
+    "choice_b": "24",
+    "choice_c": "20",
+    "choice_d": "32",
+    "correct_answer": "B",
+    "explanation": "Correct answer is 3 x 8 = 24",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 8,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 12 x 2?",
+    "choice_a": "24",
+    "choice_b": "19",
+    "choice_c": "23",
+    "choice_d": "22",
+    "correct_answer": "A",
+    "explanation": "Correct answer is 12 x 2 = 24",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 9,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 9 x 4?",
+    "choice_a": "29",
+    "choice_b": "36",
+    "choice_c": "42",
+    "choice_d": "30",
+    "correct_answer": "B",
+    "explanation": "Correct answer is 9 x 4 = 36",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 10,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 11 x 3?",
+    "choice_a": "30",
+    "choice_b": "33",
+    "choice_c": "31",
+    "choice_d": "25",
+    "correct_answer": "B",
+    "explanation": "Correct answer is 11 x 3 = 33",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 11,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 2 x 9?",
+    "choice_a": "23",
+    "choice_b": "26",
+    "choice_c": "22",
+    "choice_d": "18",
+    "correct_answer": "D",
+    "explanation": "Correct answer is 2 x 9 = 18",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 12,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 7 x 5?",
+    "choice_a": "27",
+    "choice_b": "30",
+    "choice_c": "35",
+    "choice_d": "39",
+    "correct_answer": "C",
+    "explanation": "Correct answer is 7 x 5 = 35",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 13,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 10 x 6?",
+    "choice_a": "59",
+    "choice_b": "56",
+    "choice_c": "70",
+    "choice_d": "60",
+    "correct_answer": "D",
+    "explanation": "Correct answer is 10 x 6 = 60",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 14,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 3 x 12?",
+    "choice_a": "36",
+    "choice_b": "46",
+    "choice_c": "34",
+    "choice_d": "33",
+    "correct_answer": "A",
+    "explanation": "Correct answer is 3 x 12 = 36",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 15,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 8 x 9?",
+    "choice_a": "73",
+    "choice_b": "62",
+    "choice_c": "67",
+    "choice_d": "72",
+    "correct_answer": "D",
+    "explanation": "Correct answer is 8 x 9 = 72",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 16,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 4 x 11?",
+    "choice_a": "44",
+    "choice_b": "45",
+    "choice_c": "51",
+    "choice_d": "53",
+    "correct_answer": "A",
+    "explanation": "Correct answer is 4 x 11 = 44",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 17,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 6 x 12?",
+    "choice_a": "69",
+    "choice_b": "70",
+    "choice_c": "72",
+    "choice_d": "71",
+    "correct_answer": "C",
+    "explanation": "Correct answer is 6 x 12 = 72",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 18,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 5 x 9?",
+    "choice_a": "41",
+    "choice_b": "42",
+    "choice_c": "45",
+    "choice_d": "55",
+    "correct_answer": "C",
+    "explanation": "Correct answer is 5 x 9 = 45",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 19,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 7 x 8?",
+    "choice_a": "52",
+    "choice_b": "51",
+    "choice_c": "56",
+    "choice_d": "59",
+    "correct_answer": "C",
+    "explanation": "Correct answer is 7 x 8 = 56",
+    "order": null
+  }
+},
+{
+  "model": "practice.practicequestion",
+  "pk": 20,
+  "fields": {
+    "skill_set": 1,
+    "question_text": "What is 12 x 12?",
+    "choice_a": "144",
+    "choice_b": "139",
+    "choice_c": "141",
+    "choice_d": "143",
+    "correct_answer": "A",
+    "explanation": "Correct answer is 12 x 12 = 144",
+    "order": null
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "question": 1,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:29.027Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "question": 2,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:31.638Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "question": 3,
+    "selected": "D",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:33.940Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "question": 4,
+    "selected": "B",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:40.645Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "question": 5,
+    "selected": "D",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:43.073Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "question": 6,
+    "selected": "A",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:48.260Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 7,
+  "fields": {
+    "user": 1,
+    "question": 7,
+    "selected": "B",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:12:59.182Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "question": 8,
+    "selected": "A",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:03.486Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "question": 9,
+    "selected": "B",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:08.827Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "question": 10,
+    "selected": "B",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:11.170Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "question": 11,
+    "selected": "D",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:12.778Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "question": 12,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:14.673Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "question": 13,
+    "selected": "D",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:17.906Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "question": 14,
+    "selected": "A",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:20.269Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "question": 15,
+    "selected": "D",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:22.969Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "question": 16,
+    "selected": "A",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:28.083Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 17,
+  "fields": {
+    "user": 1,
+    "question": 17,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:30.639Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "question": 18,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:33.248Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 19,
+  "fields": {
+    "user": 1,
+    "question": 19,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:41.479Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 20,
+  "fields": {
+    "user": 1,
+    "question": 20,
+    "selected": "A",
+    "is_correct": true,
+    "created_at": "2025-08-05T15:13:49.688Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 21,
+  "fields": {
+    "user": 5,
+    "question": 1,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-23T04:38:35.146Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 22,
+  "fields": {
+    "user": 5,
+    "question": 2,
+    "selected": "C",
+    "is_correct": true,
+    "created_at": "2025-08-23T04:38:37.872Z"
+  }
+},
+{
+  "model": "practice.attempt",
+  "pk": 23,
+  "fields": {
+    "user": 5,
+    "question": 3,
+    "selected": "C",
+    "is_correct": false,
+    "created_at": "2025-08-23T04:38:41.291Z"
+  }
+},
+{
+  "model": "practice.userskillprogress",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "skill_set": 1,
+    "is_mastered": true,
+    "updated_at": "2025-08-05T15:13:49.695Z"
+  }
+}
+]
