@@ -2,16 +2,125 @@
 {% block title %}Welcome to Fun Learning Math{% endblock %}
 {% block content %}
 
-<section class="hero" style="background: white; padding: 40px; text-align: center;">
+<style>
+  body {
+    background: linear-gradient(135deg, #e6f4f1, #eef6ff);
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #2ecc71, #3498db);
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 18px;
+    margin: 20px;
+    animation: fadeDown 0.8s ease;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .grades-section {
+    padding: 50px 20px;
+  }
+
+  .grades-section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #1f3d4d;
+  }
+
+  .grades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .grade-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    animation: fadeUp 0.8s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .grade-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+  }
+
+  .grade-card h3 {
+    color: #2c7be5;
+    margin-bottom: 10px;
+  }
+
+  .grade-card p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .grade-card a {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 9px 18px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+
+  .grade-card a:hover {
+    background: #27ae60;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<section class="hero">
   <h1>Welcome to Fun Learning Math</h1>
-  <p style="max-width:600px;margin:0 auto;font-size:1.2rem;">
+  <p>
     Choose your grade level to explore interactive lessons and practice exercises.
   </p>
 </section>
 
-<section class="grades-section" style="padding:50px 20px;">
-  <h2 style="text-align:center;margin-bottom:30px;">Select Your Grade or Exam</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:1000px;margin:0 auto;">
+<section class="grades-section">
+  <h2>Select Your Grade or Exam</h2>
+
+  <div class="grades-grid">
 
     {# Grades 3–8 #}
     {% for g in "345678" %}
@@ -19,10 +128,10 @@
       {% url 'grade_detail' g as url_plain %}
       {% with fallback="/grade/"|add:g|add:"/" %}
       {% with final=url_ns|default:url_plain|default:fallback %}
-      <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+      <div class="grade-card">
         <h3>Grade {{ g }}</h3>
         <p>Math lessons and practice for Grade {{ g }} students.</p>
-        <a href="{{ final }}" style="color:#0077cc;">Enter →</a>
+        <a href="{{ final }}">Enter →</a>
       </div>
       {% endwith %}{% endwith %}
     {% endfor %}
@@ -31,10 +140,10 @@
     {% url 'core:grade_detail' 'SHSAT' as url_ns_shsat %}
     {% url 'grade_detail' 'SHSAT' as url_plain_shsat %}
     {% with shsat_url=url_ns_shsat|default:url_plain_shsat|default:"/grade/SHSAT/" %}
-    <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+    <div class="grade-card">
       <h3>SHSAT Prep</h3>
       <p>Specialized practice for NYC SHSAT exam math sections.</p>
-      <a href="{{ shsat_url }}" style="color:#0077cc;">Enter →</a>
+      <a href="{{ shsat_url }}">Enter →</a>
     </div>
     {% endwith %}
 
@@ -42,23 +151,23 @@
     {% url 'core:grade_detail' 'SAT' as url_ns_sat %}
     {% url 'grade_detail' 'SAT' as url_plain_sat %}
     {% with sat_url=url_ns_sat|default:url_plain_sat|default:"/grade/SAT/" %}
-    <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
+    <div class="grade-card">
       <h3>SAT Prep</h3>
       <p>Focused lessons and practice to improve your SAT math score.</p>
-      <a href="{{ sat_url }}" style="color:#0077cc;">Enter →</a>
+      <a href="{{ sat_url }}">Enter →</a>
     </div>
     {% endwith %}
 
-   {# --- Teacher Dashboard (teacher-only card) --- #}
-{% if show_teacher_card %}
-  <div style="background:white;padding:20px;border:1px solid #ddd;border-radius:8px;text-align:center;">
-    <h3>Teacher Dashboard</h3>
-    <p>Manage lessons, upload practice questions, and create tests.</p>
-    <a href="{% url 'portals:teacher_dashboard' %}" style="color:#0077cc;">Enter →</a>
-  </div>
-{% endif %}
-
+    {# Teacher Dashboard (teacher-only) #}
+    {% if show_teacher_card %}
+    <div class="grade-card">
+      <h3>Teacher Dashboard</h3>
+      <p>Manage lessons, upload practice questions, and create tests.</p>
+      <a href="{% url 'portals:teacher_dashboard' %}">Enter →</a>
+    </div>
+    {% endif %}
 
   </div>
 </section>
+
 {% endblock %}
